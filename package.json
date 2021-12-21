@@ -4,6 +4,7 @@
   "description": "REST API that returns quotes from recently-retired F1 driver Kimi Räikkönen",
   "main": "index.js",
   "scripts": {
+    "start": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +27,8 @@
   "homepage": "https://github.com/sethvm/kimi.rest#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
