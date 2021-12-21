@@ -3,6 +3,7 @@
 
 Inspired by [ajzbc's kanye.rest](https://github.com/ajzbc/kanye.rest) and [oanhgle's bangtan-api](https://github.com/oanhgle/bangtan-api). Passages are provided without context.
 
+
 ## :zap: Endpoints
 Return a random formatted quote
 ```
