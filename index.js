@@ -5,7 +5,7 @@ const quotes = require('./data/quotes.json')
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
-    res.send('GET request at /')
+    res.send(displayRandomFormattedQuote())
 })
 
 app.get('/all', (req, res) => {
@@ -22,6 +22,13 @@ app.get('/index/:index', (req, res) => {
 })
 
 /* FUNCTIONS */
+function displayRandomFormattedQuote() {
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+    if (quote.year === null) quote.year = '';
+    const formattedQuote = `"${quote.quote}" -Kimi Räikkönen${quote.year && `, ${quote.year}`}`;
+    return formattedQuote;
+}
+
 function displayAllQuotes() {
     return quotes;
 }
