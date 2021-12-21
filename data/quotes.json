@@ -1,22 +1,78 @@
 [
-    "Ah, go and interview Mikko Leppilampi. He likes to talk.",
-    "Bwoah.",
-    "Driving is the only thing I love about F1",
-    "Hey what the fuck is this Williams?!",
-    "I don't know. You'll have to tell me.",
-    "I know what I'm doing so just be quiet!",
-    "I read somewhere that I drive with the luck of a drunk.",
-    "I spun.",
-    "I'd rather be probably out of second and third place so I don't have to go to the prize-giving",
-    "I'm not interested in what people think about me. I'm not Michael Schumacher.",
-    "Is it on or not? The drink?",
-    "Just leave me alone, I know what I'm doing.",
-    "OK.",
-    "That fucking idiot. I wanna hit him when I see him.",
-    "The first sector is okay, the rest is a bit shit.",
-    "We're so fucking shit, it's unbelievable",
-    "What do you mean we are behind Bottas?",
-    "What the papers write about me afterwards makes me laugh.",
-    "Yeah. I was having a shit.",
-    "Yeah, yeah if he cannot see behind then he should stay on the reporting stuff and not drive."
+    {
+        "quote": "Yeah. I was having a shit.",
+        "year": 2006
+    },
+    {
+        "quote": "We're so fucking shit, it's unbelievable.",
+        "year": 2011
+    },
+    {
+        "quote": "I'd rather be probably out of second and third place so I don't have to go to the prize-giving.",
+        "year": 2012
+    },
+    {
+        "quote": "I know what I'm doing so just be quiet!",
+        "year": 2012
+    },
+    {
+        "quote": "I spun.",
+        "year": 2012
+    },
+    {
+        "quote": "Just leave me alone, I know what I'm doing.",
+        "year": 2012
+    },
+    {
+        "quote": "OK...",
+        "year": 2013
+    },
+    {
+        "quote": "That fucking idiot. I wanna hit him when I see him.",
+        "year": 2013
+    },
+    {
+        "quote": "Hey what the fuck is this Williams?!",
+        "year": 2017
+    },
+    {
+        "quote": "What do you mean we are behind Bottas?",
+        "year": 2017
+    },
+    {
+        "quote": "Yeah yeah, if he cannot see behind then he should stay on the reporting stuff and not drive.",
+        "year": 2017
+    },
+    {
+        "quote": "Is it on or not? The drink?",
+        "year": 2018
+    },
+    {
+        "quote": "Driving is the only thing I love about F1.",
+        "year": 2019
+    },
+    {
+        "quote": "Ah, go and interview Mikko Leppilampi. He likes to talk.",
+        "year": null
+    },
+    {
+        "quote": "Bwoah.",
+        "year": null
+    },
+    {
+        "quote": "I'm not interested in what people think about me. I'm not Michael Schumacher.",
+        "year": null
+    },
+    {
+        "quote": "I read somewhere that I drive with the luck of a drunk.",
+        "year": null
+    },
+    {
+        "quote": "The first sector is okay, the rest is a bit shit.",
+        "year": null
+    },
+    {
+        "quote": "What the papers write about me afterwards makes me laugh.",
+        "year": null
+    }
 ]
