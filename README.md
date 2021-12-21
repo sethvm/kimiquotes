@@ -43,7 +43,6 @@ $ npm start
 ## :memo: To-Do
  - Add usage example section
  - Re-format Endpoints section
- - Clean up code
 
 ## :star2: Potential Improvements
  - Small frontend for demo

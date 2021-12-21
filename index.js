@@ -1,56 +1,31 @@
 const express = require('express')
 const app = express()
 const port = 8000
+
+const lib = require('./lib.js')
 const quotes = require('./data/quotes.json')
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
-    res.send(displayRandomFormattedQuote())
+    res.send(lib.displayRandomFormattedQuote(quotes))
 })
 
 app.get('/all', (req, res) => {
-    res.send(displayAllQuotes())
+    res.send(lib.displayAllQuotes(quotes))
 })
 
 app.get('/random', (req,res) => {
-    res.send(selectRandomQuote())
+    res.send(lib.selectRandomQuote(quotes))
 })
 
 app.get('/index/:index', (req, res) => {
     const { index } = req.params
-    res.send(selectQuoteByIndex(index))
+    res.send(lib.selectQuoteByIndex(quotes, index))
 })
 
 app.get('/how-many', (req, res) => {
-    res.send(`The kimi.rest database currently contains ${numberOfQuotes()} quotes!`)
+    res.send(`The kimi.rest database currently contains ${numberOfQuotes(quotes)} quotes!`)
 })
-
-/* FUNCTIONS */
-function displayRandomFormattedQuote() {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    if (quote.year === null) quote.year = '';
-    const formattedQuote = `"${quote.quote}" -Kimi Räikkönen${quote.year && `, ${quote.year}`}`;
-    return formattedQuote;
-}
-
-function displayAllQuotes() {
-    return quotes;
-}
-
-function selectRandomQuote() {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    return quote;
-}
-
-function selectQuoteByIndex(index) {
-    if (!quotes[index]) return `404: no quote found`;
-    const quote = quotes[index];
-    return quote;
-}
-
-function numberOfQuotes() {
-    return quotes.length;
-}
 
 /* FORMAT */
 app.set('json spaces', 4);
