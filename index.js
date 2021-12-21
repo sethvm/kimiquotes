@@ -17,8 +17,12 @@ app.get('/random', (req,res) => {
 })
 
 app.get('/index/:index', (req, res) => {
-    const { index } = req.params;
+    const { index } = req.params
     res.send(selectQuoteByIndex(index))
+})
+
+app.get('/how-many', (req, res) => {
+    res.send(`The kimi.rest database currently contains ${numberOfQuotes()} quotes!`)
 })
 
 /* FUNCTIONS */
@@ -42,6 +46,10 @@ function selectQuoteByIndex(index) {
     if (!quotes[index]) return `404: no quote found`;
     const quote = quotes[index];
     return quote;
+}
+
+function numberOfQuotes() {
+    return quotes.length;
 }
 
 /* FORMAT */

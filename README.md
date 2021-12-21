@@ -21,6 +21,10 @@ Return quote at a specified index, where `:index` is the index value
 ```
 GET /index/:index
 ```
+Return number of quotes contained in database
+```
+GET /how-many
+```
 
 ## :computer: Running Locally
 Clone the project repo
