@@ -44,5 +44,6 @@ $ npm start
  - Add usage example section
  - Re-format Endpoints section
 
+
 ## :star2: Potential Improvements
  - Small frontend for demo
