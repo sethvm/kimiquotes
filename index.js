@@ -44,6 +44,9 @@ function selectQuoteByIndex(index) {
     return quote;
 }
 
+/* FORMAT */
+app.set('json spaces', 4);
+
 /* PORT */
 app.listen(
     port,

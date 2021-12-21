@@ -5,7 +5,7 @@ Inspired by [ajzbc's kanye.rest](https://github.com/ajzbc/kanye.rest) and [oanhg
 
 
 ## :zap: Endpoints
-Return a random formatted quote
+Return a random quote (formatted)
 ```
 GET /
 ```
@@ -13,7 +13,7 @@ Return all quotes
 ```
 GET /all
 ```
-Return a random quote
+Return a random quote (unformatted)
 ```
 GET /random
 ```
@@ -37,7 +37,9 @@ $ npm start
 ```
 
 ## :memo: To-Do
- - Format responses returned by `GET /all`, `GET /random`, and `GET /index/:index` endpoints
  - Add usage example section
  - Re-format Endpoints section
  - Clean up code
+
+## :star2: Potential Improvements
+ - Small frontend for demo
