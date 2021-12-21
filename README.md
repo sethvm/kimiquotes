@@ -39,4 +39,5 @@ $ npm start
 ## :memo: To-Do
  - Format responses returned by `GET /all`, `GET /random`, and `GET /index/:index` endpoints
  - Add usage example section
-- Clean up code
+ - Re-format Endpoints section
+ - Clean up code
