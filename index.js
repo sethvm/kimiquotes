@@ -7,23 +7,32 @@ const quotes = require('./src/quotes.json')
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
+    res.send(`GET request at /`);
+})
+
+app.get('/quote', (req, res) => {
     res.send(lib.displaySampleQuote(quotes));
 })
 
-app.get('/all', (req, res) => {
-    res.send(lib.allQuotes(quotes));
-})
-
-app.get('/random', (req,res) => {
+app.get('/quote/random', (req,res) => {
     res.send(lib.randomQuote(quotes));
 })
 
-app.get('/index/:index', (req, res) => {
+app.get('/quote/index/:index', (req, res) => {
     const { index } = req.params;
     res.send(lib.selectQuoteByIndex(quotes, index));
 })
 
-app.get('/how-many', (req, res) => {
+app.get('/quotes/year/:year', (req, res) => {
+    const { year } = req.params;
+    res.send(lib.selectQuotesByYear(quotes, year));
+})
+
+app.get('/quotes/all', (req, res) => {
+    res.send(lib.allQuotes(quotes));
+})
+
+app.get('/quotes/total', (req, res) => {
     res.send(`The kimi.rest database currently contains ${lib.numberOfQuotes(quotes)} quotes!`);
 })
 

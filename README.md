@@ -7,23 +7,27 @@ Inspired by [ajzbc's kanye.rest](https://github.com/ajzbc/kanye.rest) and [oanhg
 ## :zap: Endpoints
 Return a random quote (formatted)
 ```
-GET /
-```
-Return all quotes
-```
-GET /all
+GET /quote
 ```
 Return a random quote (unformatted)
 ```
-GET /random
+GET /quote/random
 ```
 Return quote at a specified index, where `:index` is the index value
 ```
-GET /index/:index
+GET /quote/index/:index
+```
+Return quotes from a specified year, where `:year` is the year value
+```
+GET /quote/year/:year
+```
+Return all quotes
+```
+GET /quotes/all
 ```
 Return number of quotes contained in database
 ```
-GET /how-many
+GET /quotes/total
 ```
 
 ## :computer: Running Locally
