@@ -7,6 +7,9 @@
     "start": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "16.13.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sethvm/kimi.rest.git"
@@ -26,7 +29,9 @@
   },
   "homepage": "https://github.com/sethvm/kimi.rest#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "compression": "^1.7.4",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

@@ -1,9 +1,15 @@
 const express = require('express')
 const app = express()
+const helmet = require('helmet')
+const compression = require('compression')
 const port = 8000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
+
+/* MIDDLEWARE */
+app.use(helmet())
+app.use(compression())
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
@@ -36,7 +42,7 @@ app.get('/quotes/total', (req, res) => {
     res.send(`The kimi.rest database currently contains ${lib.numberOfQuotes(quotes)} quotes!`);
 })
 
-/* FORMAT */
+/* JSON FORMAT */
 app.set('json spaces', 4);
 
 /* PORT */
