@@ -12,7 +12,7 @@
     Inspired by <a href=https://github.com/ajzbc/kanye.rest>ajzbc's kanye.rest</a> and <a href=https://github.com/oanhgle/bangtan-api>oanhgle's bangtan-api</a>.
     Passages are provided without context. This resource aims to encompass the Iceman's complete spectrum of emotions.
 </p>
-
+<br />
 
 ## :zap: Endpoints
 Return a random quote (formatted)
