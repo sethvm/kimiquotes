@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const helmet = require('helmet')
 const compression = require('compression')
-const port = process.env.port || 8000
+const PORT = process.env.PORT || 3000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
@@ -43,10 +43,7 @@ app.get('/quotes/total', (req, res) => {
 })
 
 /* JSON FORMAT */
-app.set('json spaces', 4);
+app.set('json spaces', 4)
 
 /* PORT */
-app.listen(
-    port,
-    () => console.log(`Live at http://localhost:${port}`)
-)
+app.listen(PORT)
