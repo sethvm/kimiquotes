@@ -43,7 +43,10 @@ $ npm start
 ## :memo: To-Do
  - Add usage example section
  - Re-format Endpoints section
+ - Implement POST, PATCH, and DELETE endpoints
 
 
 ## :star2: Potential Improvements
  - Small frontend for demo
+ - Implement emotion categories
+ - Group quotes by year/emotion
