@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const helmet = require('helmet')
 const compression = require('compression')
-const port = 8000
+const port = process.env.port || 8000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
