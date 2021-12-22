@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const port = 8000
 
-const lib = require('./lib.js')
-const quotes = require('./data/quotes.json')
+const lib = require('./src/lib.js')
+const quotes = require('./src/quotes.json')
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
