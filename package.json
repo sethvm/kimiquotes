@@ -1,14 +1,13 @@
 {
   "name": "kimi.rest",
   "version": "1.0.0",
+  "author": "Seth Morenos <sethvm64@gmail.com>",
   "description": "REST API that returns quotes from recently-retired F1 driver Kimi Räikkönen",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": "16.13.0"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,6 @@
     "quotes",
     "rest"
   ],
-  "author": "Seth Morenos <sethvm64@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sethvm/kimi.rest/issues"
   },
@@ -35,5 +32,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }
