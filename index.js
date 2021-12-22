@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const helmet = require('helmet')
 const compression = require('compression')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
@@ -13,7 +13,7 @@ app.use(compression())
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
-    res.send(`GET request at /`);
+    res.send(`kimi.rest API - to get started, see https://github.com/sethvm/kimi.rest/blob/main/README.md`);
 })
 
 app.get('/quote', (req, res) => {

@@ -1,7 +1,17 @@
 # 🏎️ kimi.rest
-#### REST API that returns quotes by recently-retired F1 driver Kimi Räikkönen
 
-Inspired by [ajzbc's kanye.rest](https://github.com/ajzbc/kanye.rest) and [oanhgle's bangtan-api](https://github.com/oanhgle/bangtan-api). Passages are provided without context.
+<div align=center>
+    <img src='./src/kimi.gif' width=320 height=201 />
+</div>
+
+<h4 align=center>
+    REST API that returns quotes by recently-retired F1 driver Kimi Räikkönen
+</h4>
+
+<p align=center>
+    Inspired by <a href=https://github.com/ajzbc/kanye.rest>ajzbc's kanye.rest</a> and <a href=https://github.com/oanhgle/bangtan-api>oanhgle's bangtan-api</a>.
+    Passages are provided without context. This resource aims to encompass the Iceman's complete spectrum of emotions.
+</p>
 
 
 ## :zap: Endpoints
@@ -52,5 +62,4 @@ $ npm start
 
 ## :star2: Potential Improvements
  - Small frontend for demo
- - Implement emotion categories
- - Group quotes by year/emotion
+ - Categorize quotes (e.g. emotion, team radio, interview, venue)
