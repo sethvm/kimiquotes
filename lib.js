@@ -1,17 +1,17 @@
 // function library
 
-function displayRandomFormattedQuote(quotes) {
+function displaySampleQuote(quotes) {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     if (quote.year === null) quote.year = '';
     const formattedQuote = `"${quote.quote}" -Kimi Räikkönen${quote.year && `, ${quote.year}`}`;
     return formattedQuote;
 }
 
-function displayAllQuotes(quotes) {
+function allQuotes(quotes) {
     return quotes;
 }
 
-function selectRandomQuote(quotes) {
+function randomQuote(quotes) {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     return quote;
 }
@@ -27,9 +27,9 @@ function numberOfQuotes(quotes) {
 }
 
 module.exports = {
-    displayRandomFormattedQuote,
-    displayAllQuotes,
-    selectRandomQuote,
+    displaySampleQuote,
+    allQuotes,
+    randomQuote,
     selectQuoteByIndex,
     numberOfQuotes,
 };
