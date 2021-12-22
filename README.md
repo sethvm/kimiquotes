@@ -6,7 +6,7 @@
 </div>
 
 <h4 align=center>
-    REST API that returns quotes by recently-retired F1 driver Kimi Räikkönen
+    REST API that returns quotes by former F1 driver Kimi Räikkönen
 </h4>
 
 <p align=center>
