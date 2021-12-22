@@ -19,7 +19,7 @@ GET /quote/index/:index
 ```
 Return quotes from a specified year, where `:year` is the year value
 ```
-GET /quote/year/:year
+GET /quotes/year/:year
 ```
 Return all quotes
 ```
