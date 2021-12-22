@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 const helmet = require('helmet')
 const compression = require('compression')
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
@@ -13,7 +14,7 @@ app.use(compression())
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {
-    res.send(`kimi.rest API - to get started, see https://github.com/sethvm/kimi.rest/blob/main/README.md`);
+    res.sendFile(path.join(__dirname, './index.html'));
 })
 
 app.get('/quote', (req, res) => {
@@ -46,4 +47,7 @@ app.get('/quotes/total', (req, res) => {
 app.set('json spaces', 4)
 
 /* PORT */
-app.listen(PORT)
+app.listen(
+    PORT,
+    () => console.log(`Live at port ${PORT}`)
+)

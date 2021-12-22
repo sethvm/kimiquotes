@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>kimi.rest API</title>
+        <meta name="description" content="REST API that returns quotes by former F1 driver Kimi Räikkönen">
+        <link href="/styles/output.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>kimi.rest API</h1>
+        <p>Get started by using the endpoints below</p>
+        <div>
+            <h2>Endpoints</h2>
+            <div>
+                <p>Return a random quote</p>
+                <code>GET /quote</code>
+            </div>
+            <div>
+                <p>Return a random quote as an object</p>
+                <code>GET /quote/random</code>
+            </div>
+            <div>
+                <p>Return quote at a specified index, where :index is the index value</p>
+                <code>GET /quote/index/:index</code>
+            </div>
+            <div>
+                <p>Return quotes from a specified year, where :year is the year value</p>
+                <code>GET /quotes/year/:year</code>
+            </div>
+            <div>
+                <p>Return all quotes</p>
+                <code>GET /quotes/all</code>
+            </div>
+            <div>
+                <p>Return number of quotes contained in database</p>
+                <code>GET /quotes/total</code>
+            </div>
+        </div>
+    </body>
+</html>
