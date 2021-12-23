@@ -8,22 +8,18 @@ const PORT = process.env.PORT || 8000
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.json')
 
-/* MIDDLEWARE */
+// MIDDLEWARE
 app.use(helmet())
 app.use(compression())
 app.use(express.static('src'))
 
-/* GET ENDPOINTS */
+// GET ENDPOINTS
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './index.html'));
 })
 
-app.get('/quote', (req, res) => {
-    res.send(lib.displaySampleQuote(quotes));
-})
-
-app.get('/quote/random', (req,res) => {
-    res.send(lib.randomQuote(quotes));
+app.get('/quote/any', (req,res) => {
+    res.send(lib.anyQuote(quotes));
 })
 
 app.get('/quote/index/:index', (req, res) => {
@@ -41,11 +37,12 @@ app.get('/quotes/all', (req, res) => {
 })
 
 app.get('/quotes/total', (req, res) => {
-    res.send(`The kimi.rest database currently contains ${lib.numberOfQuotes(quotes)} quotes!`);
+    const numberOfQuotes = lib.numberOfQuotes(quotes);
+    res.send({ "numberOfQuotes": numberOfQuotes });
 })
 
-/* JSON FORMAT */
+// JSON FORMAT
 app.set('json spaces', 4)
 
-/* PORT */
+// PORT
 app.listen(PORT)

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>kimi.rest</title>
+        <title>Kimi Quote API</title>
         <meta name="description" content="REST API that returns quotes by former F1 driver Kimi Räikkönen">
     </head>
 
@@ -16,18 +16,14 @@
                 <br />
                 <span id='quoteDate'></span>
             </p>
+            <button id='quoteResetBtn'>New Quote</button>
         </div>
         <div>
-            <button id='quoteResetBtn'>New Quote</button>
-            <p>Get started by using the endpoints below</p>
+            <p>Get started using the endpoints below</p>
             <h2>Endpoints</h2>
             <div>
                 <p>Return a random quote</p>
-                <code>GET /quote</code>
-            </div>
-            <div>
-                <p>Return a random quote as an object</p>
-                <code>GET /quote/random</code>
+                <code>GET /quote/any</code>
             </div>
             <div>
                 <p>Return quote at a specified index, where :index is the index value</p>

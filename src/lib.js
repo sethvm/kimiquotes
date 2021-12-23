@@ -1,20 +1,12 @@
 module.exports = {
-    displaySampleQuote,
-    randomQuote,
+    anyQuote,
     selectQuoteByIndex,
     selectQuotesByYear,
     allQuotes,
     numberOfQuotes,
 }
 
-function displaySampleQuote(quotes) {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    if (quote.year === null) quote.year = '';
-    const formattedQuote = `"${quote.quote}" -Kimi Räikkönen${quote.year && `, ${quote.year}`}`;
-    return formattedQuote;
-}
-
-function randomQuote(quotes) {
+function anyQuote(quotes) {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     return quote;
 }
@@ -37,5 +29,5 @@ function allQuotes(quotes) {
 }
 
 function numberOfQuotes(quotes) {
-    return quotes.length;
+    return parseInt(quotes.length);
 }

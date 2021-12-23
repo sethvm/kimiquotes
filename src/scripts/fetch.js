@@ -1,12 +1,15 @@
+// document selectors
 const sampleQuote = document.getElementById('sampleQuote');
 const sampleQuoteDate = document.getElementById('quoteDate');
 const quoteResetBtn = document.getElementById('quoteResetBtn');
 
-window.onload = getNewSampleQuote();
-quoteResetBtn.addEventListener('click', getNewSampleQuote);
+// display update listeners
+window.onload = getQuote();
+quoteResetBtn.addEventListener('click', getQuote);
 
-async function getNewSampleQuote() {
-    const response = await fetch(`${window.location.href}quote/random`);
+// sends GET request to API
+async function getQuote() {
+    const response = await fetch(`${window.location.href}quote/any`);
     const quoteData = await response.json();
 
     if (quoteData.year === null) quoteData.year = '';
