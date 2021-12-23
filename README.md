@@ -19,7 +19,7 @@ Return a random quote
 ```
 GET /quote/any
 ```
-Return quote at a specified index, where `:index` is the index value
+Return quote at a specified index
 ```
 GET /quote/index/:index
 ```
@@ -27,7 +27,7 @@ Return all quotes
 ```
 GET /quotes/all
 ```
-Return quotes from a specified year, where `:year` is the year value
+Return quotes from a specified year
 ```
 GET /quotes/year/:year
 ```
