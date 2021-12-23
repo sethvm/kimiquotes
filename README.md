@@ -1,4 +1,4 @@
-# 🏎️ kimi.rest
+# 🇫🇮 kimi.rest
 
 <br />
 <div align=center>
@@ -6,7 +6,7 @@
 </div>
 
 <h4 align=center>
-    REST API that returns team radio and interview quotes by former F1 driver Kimi Räikkönen
+    REST API that returns team radio and interview quotes by retired F1 driver Kimi Räikkönen
 </h4>
 
 <p align=center>
@@ -27,7 +27,7 @@ Return all quotes
 ```
 GET /quotes/all
 ```
-Return quotes from a specified year
+Return all quotes from a specified year
 ```
 GET /quotes/year/:year
 ```
