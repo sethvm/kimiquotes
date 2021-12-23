@@ -30,9 +30,12 @@
                 <span id='quoteDate'></span>
             </p>
             <button id='quoteResetBtn'>New Quote</button>
+            <p>
+                Database currently contains <span id='quoteCount'>??</span> quotes
+            </p>
         </div>
+
         <div>
-            <p>Get started using the endpoints below</p>
             <h2>Endpoints</h2>
             <div>
                 <p>Return a random quote</p>
@@ -43,12 +46,12 @@
                 <code>GET /quote/index/:index</code>
             </div>
             <div>
-                <p>Return quotes from a specified year, where :year is the year value</p>
-                <code>GET /quotes/year/:year</code>
-            </div>
-            <div>
                 <p>Return all quotes</p>
                 <code>GET /quotes/all</code>
+            </div>
+            <div>
+                <p>Return quotes from a specified year, where :year is the year value</p>
+                <code>GET /quotes/year/:year</code>
             </div>
             <div>
                 <p>Return number of quotes contained in database</p>
@@ -56,6 +59,7 @@
             </div>
         </div>
 
-        <script src="./scripts/fetch.js"></script>
+        <script src="./scripts/fetchQuote.js"></script>
+        <script src="./scripts/countQuotes.js"></script>
     </body>
 </html>
