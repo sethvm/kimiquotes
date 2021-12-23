@@ -39,7 +39,7 @@ GET /quotes/total
 
 ## :computer: Usage Example(s)
 Send `GET /quote/any` request using async/await and output JSON response
-```
+``` javascript
 async function getQuote() {
 	const response = await fetch(`https://kimi-rest.herokuapp.com/quote/any`);
 	const quoteData = await response.json();
@@ -65,7 +65,7 @@ $ npm run dev
 
 ## :memo: To-Do
  - Apply styling to demo website
- - Implement POST, PATCH, and DELETE endpoints
+ - Implement `POST`, `PATCH`, and `DELETE` endpoints
 <br />
 
 ## :star2: Potential Improvements
