@@ -6,7 +6,7 @@
 </div>
 
 <h4 align=center>
-    REST API that returns team radio and interview quotes by retired F1 driver Kimi Räikkönen
+    REST API that returns team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
 </h4>
 
 <p align=center>
@@ -57,7 +57,7 @@ Open up a terminal in the project's root folder and install dependencies
 ```
 $ npm install
 ```
-Start application with auto-restart at `http://localhost:8000`
+Start the application at `http://localhost:8000`
 ```
 $ npm run dev
 ```

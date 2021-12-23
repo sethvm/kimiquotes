@@ -11,11 +11,11 @@ const quotes = require('./src/quotes.json')
 // MIDDLEWARE
 app.use(helmet())
 app.use(compression())
-app.use(express.static('src'))
+app.use(express.static('client'))
 
 // GET ENDPOINTS
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './index.html'));
+    res.sendFile(path.join(__dirname, './client/index.html'));
 })
 
 app.get('/quote/any', (req,res) => {
