@@ -11,6 +11,7 @@ const quotes = require('./src/quotes.json')
 /* MIDDLEWARE */
 app.use(helmet())
 app.use(compression())
+app.use(express.static('src'))
 
 /* GET ENDPOINTS */
 app.get('/', (req, res) => {

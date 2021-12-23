@@ -5,15 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>kimi.rest</title>
         <meta name="description" content="REST API that returns quotes by former F1 driver Kimi Räikkönen">
-        <link href="./styles/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     </head>
 
     <body>
         <div>
-            <h1>Kimi Räikkönen quotes API</h1>
-            <h2 class='sample-quote'>"Bwoah"</h2>
-            <button>New Quote</button>
+            <h1>Kimi Quote API</h1>
+            <h2 id='sampleQuote'></h2>
+            <button id='quoteResetBtn'>New Quote</button>
             <p>Get started by using the endpoints below</p>
         </div>
         <div>
@@ -43,5 +41,7 @@
                 <code>GET /quotes/total</code>
             </div>
         </div>
+
+        <script src="./scripts/fetch.js"></script>
     </body>
 </html>
