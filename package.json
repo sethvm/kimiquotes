@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Seth Morenos",
   "email": "sethvm64@gmail.com",
-  "description": "REST API that returns quotes from recently-retired F1 driver Kimi Räikkönen",
+  "description": "REST API that returns quotes by retired F1 driver Kimi Räikkönen",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
