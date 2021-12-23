@@ -9,5 +9,5 @@ async function getNumberOfQuotes() {
     const response = await fetch(`${window.location.href}quotes/total`);
     const quoteCountData = await response.json();
 
-    quoteCount.textContent = quoteCountData.numberOfQuotes;
+    quoteCount.textContent = `Database currently contains ${quoteCountData.numberOfQuotes} quotes`;
 }

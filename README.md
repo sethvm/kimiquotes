@@ -38,7 +38,7 @@ GET /quotes/total
 <br />
 
 ## :computer: Usage Example(s)
-Send get request using async/await and output JSON response
+Send `GET /quote/any` request using async/await and output JSON response
 ```
 async function getQuote() {
 	const response = await fetch(`https://kimi-rest.herokuapp.com/quote/any`);
