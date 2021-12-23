@@ -48,7 +48,4 @@ app.get('/quotes/total', (req, res) => {
 app.set('json spaces', 4)
 
 /* PORT */
-app.listen(
-    PORT,
-    () => console.log(`Live at port ${PORT}`)
-)
+app.listen(PORT)
