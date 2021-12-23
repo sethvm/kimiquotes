@@ -1,4 +1,4 @@
-# 🇫🇮 kimi.rest
+# :checkered_flag: kimi.rest
 
 <br />
 <div align=center>
