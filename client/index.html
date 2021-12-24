@@ -18,14 +18,18 @@
         <meta name ="twitter:title" content="Kimi Quote Generator">
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
+        <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <div>
+        <header>
             <h1 class='heading'>Kimi Quote Generator</h1>
             <h2 class='subHeading'>
                 A kimi.rest <abbr>API</abbr> demo
             </h2>
+        </header>
+        
+        <main>
             <p>
                 <span id='sampleQuote'>Fetching quote...</span>
                 <br />
@@ -36,7 +40,7 @@
                 New Quote
             </button>
             <p id='quoteCount'></p>
-        </div>
+        </main>
 
         <div>
             <h2>Documentation</h2>
@@ -57,14 +61,14 @@
                 <p>Return all quotes from a specified year</p>
                 <code>GET /quotes/:year</code>
             </div>
-            <div>
-                <p>Return number of quotes contained in database</p>
-                <code>GET /quotes/total</code>
-            </div>
         </div>
 
-        <script src="./scripts/fetchQuote.js"></script>
-        <script src="./scripts/countQuotes.js"></script>
-        <script src="./scripts/checkIndexes.js"></script>
+        <footer>
+            <h4>
+                Designed and built by
+                <a href="https://github.com/sethvm" target="_blank" rel="noopener noreferrer">@sethvm</a>
+            </h4>
+        </footer>
+        <script src="./displayData.js"></script>
     </body>
 </html>

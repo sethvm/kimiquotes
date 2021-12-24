@@ -31,11 +31,6 @@ app.get('/quotes', (req, res) => {
     res.send(lib.getAllQuotes(quotes));
 })
 
-app.get('/quotes/total', (req, res) => {
-    const numberOfQuotes = lib.getNumberOfQuotes(quotes);
-    res.send({ "numberOfQuotes": numberOfQuotes });
-})
-
 app.get('/quotes/:year', (req, res) => {
     const { year } = req.params;
     res.send(lib.getQuotesByYear(quotes, year));

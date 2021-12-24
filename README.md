@@ -31,10 +31,6 @@ Return all quotes from a specified year
 ```
 GET /quotes/:year
 ```
-Return number of quotes contained in database
-```
-GET /quotes/total
-```
 <br />
 
 ## :computer: Usage Example(s)

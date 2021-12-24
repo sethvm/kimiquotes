@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}

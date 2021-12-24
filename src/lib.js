@@ -2,8 +2,7 @@ module.exports = {
     getAnyQuote,
     getQuoteByIndex,
     getAllQuotes,
-    getQuotesByYear,
-    getNumberOfQuotes,
+    getQuotesByYear
 }
 
 function getAnyQuote(arr) {
@@ -25,8 +24,4 @@ function getQuotesByYear(arr, year) {
     const filteredQuotes = arr.filter(quote => quote.year === parseInt(year));
     if (filteredQuotes.length === 0) return `No quotes found from the year ${year} :(`;
     return filteredQuotes;
-}
-
-function getNumberOfQuotes(arr) {
-    return parseInt(arr.length);
 }
