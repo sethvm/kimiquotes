@@ -6,7 +6,7 @@
 </div>
 
 <h4 align=center>
-    REST API that returns team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
+    REST API that provides team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
 </h4>
 
 <p align=center>
