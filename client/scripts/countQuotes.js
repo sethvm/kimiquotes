@@ -2,10 +2,10 @@
 const quoteCount = document.getElementById('quoteCount');
 
 // display update listeners
-window.onload = getNumberOfQuotes();
+window.onload = renderQuoteCount();
 
 // send GET request to API
-async function getNumberOfQuotes() {
+async function renderQuoteCount() {
     const response = await fetch(`${window.location.href}quotes/total`);
     const quoteCountData = await response.json();
 

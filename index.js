@@ -1,8 +1,8 @@
 const express = require('express')
-const app = express()
-const path = require('path')
-const helmet = require('helmet')
 const compression = require('compression')
+const helmet = require('helmet')
+const path = require('path')
+const app = express()
 const PORT = process.env.PORT || 8000
 
 const lib = require('./src/lib.js')
@@ -18,27 +18,27 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './client/index.html'));
 })
 
-app.get('/quote/any', (req,res) => {
-    res.send(lib.anyQuote(quotes));
+app.get('/quote', (req,res) => {
+    res.send(lib.getAnyQuote(quotes));
 })
 
-app.get('/quote/index/:index', (req, res) => {
+app.get('/quote/:index', (req, res) => {
     const { index } = req.params;
-    res.send(lib.selectQuoteByIndex(quotes, index));
+    res.send(lib.getQuoteByIndex(quotes, index));
 })
 
-app.get('/quotes/year/:year', (req, res) => {
-    const { year } = req.params;
-    res.send(lib.selectQuotesByYear(quotes, year));
-})
-
-app.get('/quotes/all', (req, res) => {
-    res.send(lib.allQuotes(quotes));
+app.get('/quotes', (req, res) => {
+    res.send(lib.getAllQuotes(quotes));
 })
 
 app.get('/quotes/total', (req, res) => {
-    const numberOfQuotes = lib.numberOfQuotes(quotes);
+    const numberOfQuotes = lib.getNumberOfQuotes(quotes);
     res.send({ "numberOfQuotes": numberOfQuotes });
+})
+
+app.get('/quotes/:year', (req, res) => {
+    const { year } = req.params;
+    res.send(lib.getQuotesByYear(quotes, year));
 })
 
 // JSON FORMAT

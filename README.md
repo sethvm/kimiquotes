@@ -17,19 +17,19 @@
 ## :zap: Endpoints
 Return a random quote
 ```
-GET /quote/any
+GET /quote
 ```
 Return quote at a specified index
 ```
-GET /quote/index/:index
+GET /quote/:index
 ```
 Return all quotes
 ```
-GET /quotes/all
+GET /quotes
 ```
 Return all quotes from a specified year
 ```
-GET /quotes/year/:year
+GET /quotes/:year
 ```
 Return number of quotes contained in database
 ```
@@ -41,7 +41,7 @@ GET /quotes/total
 Send `GET /quote/any` request using async/await and output JSON response
 ``` javascript
 async function getQuote() {
-	const response = await fetch(`https://kimi-rest.herokuapp.com/quote/any`);
+	const response = await fetch('https://kimi-rest.herokuapp.com/quote/any');
 	const quoteData = await response.json();
 	console.log(quoteData);
 }
@@ -64,7 +64,8 @@ $ npm run dev
 <br />
 
 ## :memo: To-Do
- - Apply styling to demo website
+ - Clean up demo site scripts
+ - Apply styling to demo site
  - Implement `POST`, `PATCH`, and `DELETE` endpoints
 <br />
 

@@ -1,33 +1,32 @@
 module.exports = {
-    anyQuote,
-    selectQuoteByIndex,
-    selectQuotesByYear,
-    allQuotes,
-    numberOfQuotes,
+    getAnyQuote,
+    getQuoteByIndex,
+    getAllQuotes,
+    getQuotesByYear,
+    getNumberOfQuotes,
 }
 
-function anyQuote(quotes) {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+function getAnyQuote(arr) {
+    const quote = arr[Math.floor(Math.random() * arr.length)];
     return quote;
 }
 
-function selectQuoteByIndex(quotes, index) {
-    if (!quotes[index]) return '404: no quote found';
-    const quote = quotes[index];
+function getQuoteByIndex(arr, index) {
+    if (!arr[index]) return `No quote found at index ${index} :(`;
+    const quote = arr[index];
     return quote;
 }
 
-function selectQuotesByYear(quotes, year) {
-    year = parseInt(year);
-    const filteredQuotes = quotes.filter(quote => quote.year === year);
-    if (filteredQuotes.length === 0) return '404: no quotes found';
+function getAllQuotes(arr) {
+    return arr;
+}
+
+function getQuotesByYear(arr, year) {
+    const filteredQuotes = arr.filter(quote => quote.year === parseInt(year));
+    if (filteredQuotes.length === 0) return `No quotes found from the year ${year} :(`;
     return filteredQuotes;
 }
 
-function allQuotes(quotes) {
-    return quotes;
-}
-
-function numberOfQuotes(quotes) {
-    return parseInt(quotes.length);
+function getNumberOfQuotes(arr) {
+    return parseInt(arr.length);
 }

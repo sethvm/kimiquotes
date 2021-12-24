@@ -4,12 +4,12 @@ const sampleQuoteDate = document.getElementById('quoteDate');
 const quoteResetBtn = document.getElementById('quoteResetBtn');
 
 // display update listeners
-window.onload = getQuote();
-quoteResetBtn.addEventListener('click', getQuote);
+window.onload = renderSampleQuote();
+quoteResetBtn.addEventListener('click', renderSampleQuote);
 
 // send GET request to API
-async function getQuote() {
-    const response = await fetch(`${window.location.href}quote/any`);
+async function renderSampleQuote() {
+    const response = await fetch(`${window.location.href}quote`);
     const quoteData = await response.json();
 
     if (quoteData.year === null) quoteData.year = '';
