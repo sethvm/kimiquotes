@@ -1,4 +1,6 @@
-[
+'use strict';
+
+module.exports = [
     {
         "quote": "Yeah, I was having a shit.",
         "year": 2006

@@ -6,7 +6,7 @@ const app = express()
 const PORT = process.env.PORT || 8000
 
 const lib = require('./src/lib.js')
-const quotes = require('./src/quotes.json')
+const quotes = require('./src/quotes.js')
 
 // MIDDLEWARE
 app.use(helmet())
