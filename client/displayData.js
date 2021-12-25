@@ -21,7 +21,7 @@ async function renderSampleQuote() {
 
     if (quoteData.year === null) quoteData.year = '';
     sampleQuote.textContent = `"${quoteData.quote}"`;
-    sampleQuoteDate.textContent = `-Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`;
+    sampleQuoteDate.textContent = `- Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`;
 }
 
 async function renderQuoteCount() {

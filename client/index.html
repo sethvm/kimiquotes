@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kimi Quote Generator</title>
         <meta name="description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
-        <link rel="icon" href="favicon.ico">
+        <meta name="theme-color" content="#17181A">
+        <link rel="icon" href="favicon.png">
         <link rel="canonical" href="https://kimi-rest.herokuapp.com">
         <!-- opengraph -->
         <meta name="title" property="og:title" content="Kimi Quote Generator">
         <meta property="og:url" content="https://kimi-rest.herokuapp.com">
-        <meta property="og:image" content="./preview.png">
+        <meta property="og:image" content="preview.png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:length" content="630">
         <meta property="og:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
@@ -19,19 +20,23 @@
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <h1 class='heading'>Kimi Quote Generator</h1>
-            <h2 class='subHeading'>
-                A kimi.rest <abbr>API</abbr> demo
-            </h2>
+            <h1 id='title'>Kimi Quote Generator</h1>
+            <h2 id='blurb'>A kimi.rest <abbr>API</abbr> demo</h2>
         </header>
         
-        <main>
+        <div id="quoteSection">
             <p>
-                <span id='sampleQuote'>Fetching quote...</span>
+                <span id='sampleQuote'>
+                    Fetching quote...
+                </span>
                 <br />
                 <br />
                 <span id='quoteDate'></span>
@@ -39,36 +44,53 @@
             <button id='quoteResetBtn'>
                 New Quote
             </button>
-            <p id='quoteCount'></p>
-        </main>
+        </div>
 
-        <div>
+        <div class='docSection'>
             <h2>Documentation</h2>
-            <h3>Endpoints</h3>
-            <div>
-                <p>Return a random quote</p>
-                <code>GET /quote</code>
-            </div>
-            <div>
-                <p>Return quote at a specified index<span id='indexRange'></span></p>
-                <code>GET /quote/:index</code>
-            </div>
-            <div>
-                <p>Return all quotes</p>
-                <code>GET /quotes</code>
-            </div>
-            <div>
-                <p>Return all quotes from a specified year</p>
-                <code>GET /quotes/:year</code>
+            <div class='codeSection'>
+                <h3 class='subHeading'>Endpoints</h3>
+                <div class='codeSnippet'>
+                    <p>Return a random quote</p>
+                    <code>GET /quote</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return quote at a specified index<span id='indexRange'></span></p>
+                    <code>GET /quote/:index</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes</p>
+                    <code>GET /quotes</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes from a specified year</p>
+                    <code>GET /quotes/:year</code>
+                </div>
             </div>
         </div>
 
         <footer>
-            <h4>
+            <p id='quoteCount'></p>
+            <p>
+                Browse the
+                <a
+                href="https://github.com/sethvm/kimi.rest"
+                target="_blank"
+                rel="noopener noreferrer">
+                    project source code
+                </a>
+            </p>
+            <p>
                 Designed and built by
-                <a href="https://github.com/sethvm" target="_blank" rel="noopener noreferrer">@sethvm</a>
-            </h4>
+                <a
+                href="https://github.com/sethvm"
+                target="_blank"
+                rel="noopener noreferrer">
+                    @sethvm
+                </a>
+            </p>
         </footer>
+
         <script src="./displayData.js"></script>
     </body>
 </html>
