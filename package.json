@@ -7,6 +7,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch client:client --style compressed",
     "dev": "npx nodemon",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,7 +34,8 @@
     "helmet": "^4.6.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass": "^1.45.1"
   },
   "engines": {
     "node": "16.13.0"

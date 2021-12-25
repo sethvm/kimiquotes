@@ -1,0 +1,158 @@
+// palette
+$background-color: #17181A;
+$code-background-color: #31363F;
+$heading-font-color: #FFFFFF;
+$subheading-font-color: #ABB2BF;
+$highlight-font-color: #FCD98E;
+
+// font families
+$body-font: 'Inter', sans-serif;
+$quote-font: 'Courier', sans-serif;
+
+// font size
+@mixin font-size-xl {
+    font-size: 36px;
+}
+
+@mixin font-size-large {
+    font-size: 20px;
+}
+
+@mixin font-size-normal {
+    font-size: 18px;
+}
+
+@mixin font-size-small {
+    font-size: 16px;
+}
+
+@mixin font-size-xs {
+    font-size: 14px;
+}
+
+//font weight
+@mixin font-weight-bold {
+    font-weight: 700;
+}
+
+@mixin font-weight-semibold {
+    font-weight: 600;
+}
+
+@mixin font-weight-normal {
+    font-weight: 400;
+}
+
+@mixin font-weight-light {
+    font-weight: 300;
+}
+
+@mixin quote-font-style {
+    font-family: $quote-font;
+    color: $highlight-font-color;
+    @include font-size-large;
+    line-height: 1.35em;
+}
+
+// page styling
+body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 32px;
+    font-family: $body-font;
+    @include font-size-small;
+    background-color: $background-color;
+    color: $heading-font-color;
+}
+
+code {
+    display: flex;
+    padding: 16px 18px;
+    border-radius: 4px;
+    background-color: $code-background-color;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-top: 120px;
+    @include font-size-xs;
+}
+
+p {
+    @include font-weight-light;
+}
+
+a,
+a:visited {
+    color: $highlight-font-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#title {
+    margin-bottom: 0;
+    @include font-size-xl;
+    @include font-weight-bold;
+}
+
+#blurb {
+    margin-top: 8px;
+    color: $subheading-font-color;
+    @include font-size-normal;
+    @include font-weight-normal;
+}
+
+#quoteSection {
+    margin: 84px auto;
+}
+
+#sampleQuote {
+    @include quote-font-style;
+}
+
+#quoteDate {
+    @include quote-font-style;
+}
+
+#quoteResetBtn {
+    height: auto;
+    width: auto;
+    margin-top: 40px;
+    padding: 14px 20px;
+    border-radius: 200px;
+    border-style: none;
+    background-color: #EDD382;
+    text-align: center;
+    font-family: $body-font;
+    @include font-size-small;
+    @include font-weight-bold;
+    color: #1A1A1A;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F4E5B5;
+    }
+}
+
+.docSection {
+    margin-top: 100px;
+}
+
+.codeSection {
+    margin-top: 36px;
+}
+
+.codeSnippet {
+    margin-bottom: 20px;
+}
+
+.subHeading {
+    color: $subheading-font-color;
+    @include font-size-large;
+    @include font-weight-semibold;
+}
