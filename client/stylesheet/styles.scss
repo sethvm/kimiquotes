@@ -116,8 +116,7 @@ a:visited {
     margin: 84px auto;
 }
 
-#sampleQuote,
-#quoteDate {
+#sampleQuote {
     @include quote-font-style;
 }
 
