@@ -6,10 +6,22 @@ $subheading-font-color: #ABB2BF;
 $highlight-font-color: #FCD98E;
 $btn-hover-color: #F4E5B5;
 
-// font families
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+// fonts
 $body-font: 'Inter', sans-serif;
+$quote-font: 'Sanchez', sans-serif;
 $code-font: 'Courier', sans-serif;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('TrueType');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sanchez';
+    src: url('../fonts/Sanchez-Regular.ttf') format('TrueType');
+    font-display: swap;
+}
 
 // font size
 @mixin font-size-xl {
@@ -34,23 +46,27 @@ $code-font: 'Courier', sans-serif;
 
 //font weight
 @mixin font-weight-bold {
-    font-weight: 700;
+    font-weight: 650;
+    font-variation-settings: 'wght' 650;
 }
 
 @mixin font-weight-semibold {
     font-weight: 600;
+    font-variation-settings: 'wght' 600;
 }
 
 @mixin font-weight-normal {
     font-weight: 400;
+    font-variation-settings: 'wght' 400;
 }
 
 @mixin font-weight-light {
     font-weight: 300;
+    font-variation-settings: 'wght' 300;
 }
 
 @mixin quote-font-style {
-    font-family: $code-font;
+    font-family: $quote-font;
     color: $highlight-font-color;
     @include font-size-large;
     line-height: 1.35em;
@@ -125,6 +141,7 @@ a:visited {
 
 #sampleQuote {
     @include quote-font-style;
+    letter-spacing: 0.04em;
 }
 
 #quoteResetBtn {
@@ -157,6 +174,10 @@ a:visited {
 
 .codeSnippet {
     margin-bottom: 20px;
+}
+
+.heading {
+    @include font-weight-semibold;
 }
 
 .subHeading {
