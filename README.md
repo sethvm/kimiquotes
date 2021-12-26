@@ -37,9 +37,9 @@ GET /quotes/:year
 Send `GET /quote/any` request using async/await and output JSON response
 ``` javascript
 async function getQuote() {
-	const response = await fetch('https://kimi-rest.herokuapp.com/quote/any');
-	const quoteData = await response.json();
-	console.log(quoteData);
+	const response = await fetch('https://kimi-rest.herokuapp.com/quote');
+	const quote = await response.json();
+	console.log(quote);
 }
 ```
 <br />
