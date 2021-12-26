@@ -60,7 +60,7 @@ $ npm run dev
 <br />
 
 ## :memo: To-Do
- - Share button(s)
+ - Implement share button(s)
  - Implement `POST`, `PATCH`, and `DELETE` endpoints
 <br />
 
