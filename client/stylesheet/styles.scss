@@ -10,11 +10,7 @@ $btn-hover-color: #F4E5B5;
 $body-font: 'Inter', sans-serif;
 $code-font: 'Courier', sans-serif;
 
-@font-face {
-    font-family: 'Inter';
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700');
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 // font size
 @mixin font-size-xl {
@@ -64,6 +60,7 @@ $code-font: 'Courier', sans-serif;
 // page styling
 body {
     max-width: 720px;
+    overflow-x: hidden;
     margin: 0 auto;
     padding: 24px 32px;
     font-family: $body-font;
@@ -119,10 +116,7 @@ a:visited {
     margin: 84px auto;
 }
 
-#sampleQuote {
-    @include quote-font-style;
-}
-
+#sampleQuote,
 #quoteDate {
     @include quote-font-style;
 }
