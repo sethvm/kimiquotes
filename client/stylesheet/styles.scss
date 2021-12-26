@@ -7,10 +7,9 @@ $highlight-font-color: #FCD98E;
 $btn-hover-color: #F4E5B5;
 
 // font families
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 $body-font: 'Inter', sans-serif;
 $code-font: 'Courier', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 // font size
 @mixin font-size-xl {
@@ -57,6 +56,11 @@ $code-font: 'Courier', sans-serif;
     line-height: 1.35em;
 }
 
+// spacing
+@mixin indent-padding {
+    padding: 0 4px;
+}
+
 // page styling
 body {
     max-width: 720px;
@@ -82,6 +86,8 @@ footer {
     flex-direction: column;
     align-content: space-around;
     margin-top: 120px;
+    @include indent-padding;
+    padding-bottom: 16px;
     @include font-size-xs;
 }
 
@@ -114,6 +120,7 @@ a:visited {
 
 #quoteSection {
     margin: 84px auto;
+    @include indent-padding;
 }
 
 #sampleQuote {
