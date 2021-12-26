@@ -2,7 +2,7 @@
 
 <br />
 <div align=center>
-    <img src='./src/kimi.gif' width=320 height=201 />
+    <img src='kimi.gif' width=320 height=201 />
 </div>
 
 <h4 align=center>
@@ -60,8 +60,6 @@ $ npm run dev
 <br />
 
 ## :memo: To-Do
- - Clean up demo site scripts
- - Apply styling to demo site
  - Implement `POST`, `PATCH`, and `DELETE` endpoints
 <br />
 

@@ -19,7 +19,7 @@
         <meta name ="twitter:title" content="Kimi Quote Generator">
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
-        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="stylesheet/styles.css" rel="stylesheet" type="text/css">
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,42 +32,43 @@
             <h2 id='blurb'>A kimi.rest <abbr>API</abbr> demo</h2>
         </header>
         
-        <div id="quoteSection">
-            <p>
-                <span id='sampleQuote'>
-                    Fetching quote...
-                </span>
-                <br />
-                <br />
-                <span id='quoteDate'></span>
-            </p>
-            <button id='quoteResetBtn'>
-                New Quote
-            </button>
-        </div>
-
-        <div class='docSection'>
-            <h2>Documentation</h2>
-            <div class='codeSection'>
-                <h3 class='subHeading'>Endpoints</h3>
-                <div class='codeSnippet'>
-                    <p>Return a random quote</p>
-                    <code>GET /quote</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return quote at a specified index<span id='indexRange'></span></p>
-                    <code>GET /quote/:index</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return all quotes</p>
-                    <code>GET /quotes</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return all quotes from a specified year</p>
-                    <code>GET /quotes/:year</code>
+        <main>
+            <div id="quoteSection">
+                <p>
+                    <span id='sampleQuote'>
+                        Fetching quote...
+                    </span>
+                    <br />
+                    <br />
+                    <span id='quoteDate'></span>
+                </p>
+                <button id='quoteResetBtn'>
+                    New Quote
+                </button>
+            </div>
+            <div class='docSection'>
+                <h2>Documentation</h2>
+                <div class='codeSection'>
+                    <h3 class='subHeading'>Endpoints</h3>
+                    <div class='codeSnippet'>
+                        <p>Return a random quote</p>
+                        <code>GET /quote</code>
+                    </div>
+                    <div class='codeSnippet'>
+                        <p>Return quote at a specified index<span id='indexRange'></span></p>
+                        <code>GET /quote/:index</code>
+                    </div>
+                    <div class='codeSnippet'>
+                        <p>Return all quotes</p>
+                        <code>GET /quotes</code>
+                    </div>
+                    <div class='codeSnippet'>
+                        <p>Return all quotes from a specified year</p>
+                        <code>GET /quotes/:year</code>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <footer>
             <p>
