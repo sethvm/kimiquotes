@@ -6,6 +6,10 @@ module.exports = [
         "year": 2006
     },
     {
+        "quote": "...",
+        "year": 2008
+    },
+    {
         "quote": "Um, uh, I don't think I'll answer that. It's better that I don't say anything.",
         "year": 2008
     },
@@ -58,7 +62,7 @@ module.exports = [
         "year": 2012
     },
     {
-        "quote": "Don't shout there, fucker!",
+        "quote": "Don't shout there, for fuck's sake! I will move when I have a chance.",
         "year": 2013
     },
     {
@@ -86,11 +90,15 @@ module.exports = [
         "year": 2013
     },
     {
+        "quote": "Tch.",
+        "year": 2013
+    },
+    {
         "quote": "What the hell he is doing?!",
         "year": 2013
     },
     {
-        "quote": "I crashed.",
+        "quote": "I crashed — uh — I guess you saw it.",
         "year": 2014
     },
     {
@@ -130,11 +138,19 @@ module.exports = [
         "year": 2017
     },
     {
+        "quote": "Did you win the championship or not?",
+        "year": 2018
+    },
+    {
         "quote": "Fucking finally.",
         "year": 2018
     },
     {
-        "quote": "No, I don't have the power, so what's the point to waste in even think about it?",
+        "quote": "No, I don't have the power, so what's the point to waste in even thinking about it?",
+        "year": 2018
+    },
+    {
+        "quote": "Thank you.",
         "year": 2018
     },
     {
@@ -158,7 +174,7 @@ module.exports = [
         "year": 2019
     },
     {
-        "quote": "It's more like a hobby for me. So obviously I don't need to do it if I don't want.",
+        "quote": "It's more like a hobby for me, so obviously I don't need to do it if I don't want.",
         "year": 2019
     },
     {
@@ -190,7 +206,27 @@ module.exports = [
         "year": 2021
     },
     {
+        "quote": "For me, the principle's exactly the same; you just have to perform at your maximum with the car you're given.",
+        "year": 2021
+    },
+    {
+        "quote": "Honestly, I just did whatever made me happy — I always have.",
+        "year": 2021
+    },
+    {
+        "quote": "I think sleeping is underrated.",
+        "year": 2021
+    },
+    {
         "quote": "Good bye!",
+        "year": 2021
+    },
+    {
+        "quote": "I achieved what I wanted to do in F1, and that's the thing that matters. I don't care what anybody else thinks.",
+        "year": 2021
+    },
+    {
+        "quote": "I'm not here to please people.",
         "year": 2021
     },
     {
@@ -198,7 +234,19 @@ module.exports = [
         "year": 2021
     },
     {
+        "quote": "My plan is to have no plan and spend time with my family.",
+        "year": 2021
+    },
+    {
         "quote": "The most surprising thing that happened — will happen — nothing.",
+        "year": 2021
+    },
+    {
+        "quote": "What will I do next? I don't know.",
+        "year": 2021
+    },
+    {
+        "quote": "Winning the title didn't really change my life... apart from making it more hectic.",
         "year": 2021
     },
     {
@@ -214,7 +262,19 @@ module.exports = [
         "year": null
     },
     {
+        "quote": "Coulthard can say what he wants. I'm not interested in what he's saying.",
+        "year": null
+    },
+    {
         "quote": "Formula 1 would be a paradise without the media.",
+        "year": null
+    },
+    {
+        "quote": "I don't give a damn about what Trulli says.",
+        "year": null
+    },
+    {
+        "quote": "I'm not interested in what Jackie says. He hasn't got anything to do with me.",
         "year": null
     },
     {
@@ -226,11 +286,27 @@ module.exports = [
         "year": null
     },
     {
+        "quote": "It's all the same if it rains or not.",
+        "year": null
+    },
+    {
+        "quote": "Mwoah.",
+        "year": null
+    },
+    {
+        "quote": "Others can sit in the simulators if they want. I'm here to drive.",
+        "year": null
+    },
+    {
         "quote": "The first sector is okay, the rest is a bit shit.",
         "year": null
     },
     {
         "quote": "What the papers write about me afterwards makes me laugh.",
+        "year": null
+    },
+    {
+        "quote": "You don't drive races on paper.",
         "year": null
     }
 ]
