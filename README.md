@@ -1,4 +1,4 @@
-# :checkered_flag: kimi.rest
+# :checkered_flag: kimi.quotes
 
 <br />
 <div align=center>
