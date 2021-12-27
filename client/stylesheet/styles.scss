@@ -148,6 +148,9 @@ a:visited {
 }
 
 @mixin btn-styling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: auto;
     width: auto;
     padding: 12px 20px;
@@ -209,6 +212,12 @@ a:visited {
 
 .codeSnippet {
     margin-bottom: 20px;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }
 
 .heading {

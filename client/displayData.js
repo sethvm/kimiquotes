@@ -31,11 +31,11 @@ async function renderQuoteIndexRange() {
 }
 
 // tweet function
-// template contains 76 non-quote characters
+// production template contains 79 non-quote characters
 function tweetQuote() {
     const encodedQuote = encodeURIComponent(sampleQuote.innerText);
     const siteLink = `https://${window.location.host}`;
     const hashtags = `Bwoah,KimiRaikkonen,F1`;
 
-    window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A%0A${siteLink}%0A%0A&hashtags=${hashtags}`);
+    window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A%0A${siteLink}%0A&hashtags=${hashtags}`);
 }
