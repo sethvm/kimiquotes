@@ -44,23 +44,8 @@ async function getQuote() {
 ```
 <br />
 
-## :floppy_disk: Running Locally
-Clone the project repo
-```
-$ git clone https://github.com/sethvm/kimi.quotes.git
-```
-Open up a terminal in the project's root folder and install dependencies
-```
-$ npm install
-```
-Start the application at `http://localhost:8000`
-```
-$ npm run dev
-```
-<br />
-
 ## :memo: To-Do
- - Nothing at the moment; quote contributions/updates are welcome!
+ - Nothing at the moment — quote contributions/updates are welcome!
 <br />
 
 ## :star2: Potential Improvements

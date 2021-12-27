@@ -132,26 +132,28 @@ a:visited {
 }
 
 #quoteSection {
-    margin: 84px auto;
+    height: 100%;
+    margin: 100px auto;
     @include indent-padding;
 }
 
 @mixin quote-font-style {
     font-family: $quote-font;
     color: $highlight-font-color;
-    @include font-size-large;
     line-height: 1.35em;
-
-    @media (min-width: 768px) {
-        @include font-size-xl;
-        line-height: 1.25em;
-    }
 }
-
 
 #sampleQuote,
 #sampleQuoteDate {
     @include quote-font-style;
+    @include font-size-large;
+}
+
+#sampleQuote {
+    @media (min-width: 768px) {
+        @include font-size-xl;
+        line-height: 1.25em;
+    }
 }
 
 @mixin btn-styling {
@@ -230,14 +232,6 @@ a:visited {
     @media (min-width: 768px) {
         margin-top: 72px;
     }
-}
-
-.docSection {
-    margin-top: 100px;
-}
-
-.codeSection {
-    margin-top: 36px;
 }
 
 .codeSnippet {
