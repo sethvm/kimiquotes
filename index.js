@@ -10,6 +10,28 @@ const quotes = require('./src/quotes.js')
 
 // MIDDLEWARE
 app.use(helmet())
+app.use(
+    helmet.contentSecurityPolicy({
+        useDefaults: true,
+        directives: {
+            "img-src": [
+                "'self'",
+                "www.googletagmanager.com",
+                "www.google-analytics.com"
+            ],
+            "script-src": [
+                "'self'",
+                "'sha256-70QIwnsv31ASNZe1TXSoyHIG8wAAoQgBdYtK4wh6qhc='",
+                "www.googletagmanager.com",
+                "www.google-analytics.com"
+            ],
+            "connect-src": [
+                "'self'",
+                "www.google-analytics.com"
+            ],
+        }
+    })
+)
 app.use(compression())
 app.use(express.static('client'))
 
