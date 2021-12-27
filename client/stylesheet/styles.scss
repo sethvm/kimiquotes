@@ -10,7 +10,7 @@ $tweet-btn-hover-color: #54B3F4;
 
 // fonts
 $body-font: 'Inter', sans-serif;
-$quote-font: 'Sanchez', sans-serif;
+$quote-font: 'Consola', monospace;
 $code-font: monospace;
 
 @font-face {
@@ -20,8 +20,10 @@ $code-font: monospace;
 }
 
 @font-face {
-    font-family: 'Sanchez';
-    src: url('../fonts/Sanchez-Regular.ttf') format('TrueType');
+    font-family: 'Consola';
+    src: 
+        url('../fonts/consola.woff2') format('woff2'),
+        url('../fonts/consola.woff') format('woff');
     font-display: swap;
 }
 
@@ -148,7 +150,6 @@ a:visited {
 
 #sampleQuote {
     @include quote-font-style;
-    letter-spacing: 0.04em;
 }
 
 @mixin btn-styling {
