@@ -60,10 +60,10 @@ $ npm run dev
 <br />
 
 ## :memo: To-Do
- - Implement share button(s)
- - Implement `POST`, `PATCH`, and `DELETE` endpoints
+ - Nothing at the moment; quote contributions/updates are welcome!
 <br />
 
 ## :star2: Potential Improvements
+ - Implement `POST`, `PATCH`, and `DELETE` endpoints
  - Categorize quotes (e.g. emotion, team radio, interview, venue)
 <br />

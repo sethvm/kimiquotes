@@ -20,6 +20,15 @@
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
         <link href="stylesheet/styles.css" rel="stylesheet" type="text/css">
+        <!-- Global site tag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152533938-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-152533938-3');
+        </script>
     </head>
 
     <body>
@@ -38,7 +47,8 @@
                 <div class='btnContainer'>
                     <button
                     id='quoteResetBtn'
-                    aria-label='new quote'>
+                    aria-label='new quote'
+                    onclick='handleInteraction("https://kimi-rest.herokuapp.com/quote")'>
                         <img
                         src='icons/chat.svg'
                         class='btn-icon'></img>
@@ -46,7 +56,8 @@
                     </button>
                     <button
                     id='tweetBtn'
-                    aria-label='tweet'>
+                    aria-label='tweet'
+                    onclick='handleInteraction("https://twitter.com")'>
                         <img
                         src='icons/twitter.svg'
                         class='btn-icon'></img>
@@ -83,7 +94,8 @@
                 <a
                 href="https://github.com/sethvm/kimi.rest"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                onclick='handleInteraction("https://github.com/sethvm/kimi.rest")'>
                     project source code
                 </a>
             </p>
@@ -92,12 +104,13 @@
                 <a
                 href="https://sethvm.com"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                onclick='handleInteraction("https://github.com/sethvm/kimi.rest")'>
                     Seth Morenos
                 </a>
             </p>
         </footer>
 
-        <script src="./displayData.js"></script>
+        <script src="hydratePage.js"></script>
     </body>
 </html>

@@ -39,3 +39,11 @@ function tweetQuote() {
 
     window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A%0A${siteLink}%0A&hashtags=${hashtags}`);
 }
+
+// analytics
+function handleInteraction(url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){ document.location = url; }
+    });
+}
