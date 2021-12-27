@@ -132,7 +132,9 @@ a:visited {
 }
 
 #quoteSection {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     margin: 100px auto;
     @include indent-padding;
 }

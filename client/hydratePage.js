@@ -23,7 +23,8 @@ async function renderSampleQuote() {
 }
 
 // tweet function
-// production template contains 79 non-quote characters
+// tweets have a 280-character limit
+// production template can contain up to 58 non-quote characters
 function tweetQuote() {
     const encodedQuote = encodeURIComponent(sampleQuote.innerText);
     const encodedQuoteDate = encodeURIComponent(sampleQuoteDate.innerText);

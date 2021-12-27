@@ -1,6 +1,5 @@
+// quotes can have a maximum of 220 characters (excluding quotation marks)
 'use strict';
-
-// quotes can have a maximum of 199 characters (excluding quotation marks)
 
 module.exports = [
     {
