@@ -37,7 +37,7 @@ GET /quotes/:year
 Send `GET /quote/any` request using async/await and output JSON response
 ``` javascript
 async function getQuote() {
-	const response = await fetch('https://kimi-rest.herokuapp.com/quote');
+	const response = await fetch('https://kimiquotes.herokuapp.com/quote');
 	const quote = await response.json();
 	console.log(quote);
 }
@@ -47,7 +47,7 @@ async function getQuote() {
 ## :floppy_disk: Running Locally
 Clone the project repo
 ```
-$ git clone https://github.com/sethvm/kimi.rest.git
+$ git clone https://github.com/sethvm/kimi.quotes.git
 ```
 Open up a terminal in the project's root folder and install dependencies
 ```

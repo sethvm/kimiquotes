@@ -1,5 +1,5 @@
 {
-  "name": "kimi.rest",
+  "name": "kimi.quotes",
   "version": "1.0.0",
   "author": "Seth Morenos",
   "email": "sethvm64@gmail.com",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sethvm/kimi.rest.git"
+    "url": "git+https://github.com/sethvm/kimi.quotes.git"
   },
   "keywords": [
     "api",
@@ -25,9 +25,9 @@
     "rest"
   ],
   "bugs": {
-    "url": "https://github.com/sethvm/kimi.rest/issues"
+    "url": "https://github.com/sethvm/kimi.quotes/issues"
   },
-  "homepage": "https://github.com/sethvm/kimi.rest#readme",
+  "homepage": "https://github.com/sethvm/kimi.quotes#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.2",
