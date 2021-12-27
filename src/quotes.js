@@ -1,5 +1,7 @@
 'use strict';
 
+// quotes can have a maximum of 202 characters (excluding quotation marks)
+
 module.exports = [
     {
         "quote": "Yeah, I was having a shit.",

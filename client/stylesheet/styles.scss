@@ -3,10 +3,10 @@ $background-color: #17181A;
 $code-background-color: #31363F;
 $heading-font-color: #FFFFFF;
 $subheading-font-color: #ABB2BF;
-$highlight-font-color: #FCD98E;
-$btn-hover-color: #F4E5B5;
+$highlight-font-color: #FAC655;
+$btn-hover-color: #FCE0A1;
 $tweet-btn-color: #1D9BF0;
-$tweet-btn-hover-color: #54B3F4;
+$tweet-btn-hover-color: #0869BD;
 
 // fonts
 $body-font: 'Inter', sans-serif;
@@ -57,11 +57,6 @@ $code-font: monospace;
 @mixin font-weight-semibold {
     font-weight: 600;
     font-variation-settings: 'wght' 600;
-}
-
-@mixin font-weight-medium {
-    font-weight: 500;
-    font-variation-settings: 'wght' 500;
 }
 
 @mixin font-weight-normal {
@@ -160,7 +155,7 @@ a:visited {
     border-style: none;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.15s ease;
     font-family: $body-font;
 }
 
@@ -180,7 +175,7 @@ a:visited {
 #tweetBtn {
     @include btn-styling;
     @include font-size-small;
-    @include font-weight-medium;
+    @include font-weight-semibold;
     background-color: $tweet-btn-color;
     color: $heading-font-color;
 
