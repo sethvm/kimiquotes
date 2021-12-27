@@ -149,7 +149,8 @@ a:visited {
 }
 
 
-#sampleQuote {
+#sampleQuote,
+#sampleQuoteDate {
     @include quote-font-style;
 }
 

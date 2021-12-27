@@ -1,5 +1,6 @@
 // document selectors
 const sampleQuote = document.getElementById('sampleQuote');
+const sampleQuoteDate = document.getElementById('sampleQuoteDate');
 const quoteResetBtn = document.getElementById('quoteResetBtn');
 const tweetBtn = document.getElementById('tweetBtn');
 const indexRange = document.getElementById('indexRange');
@@ -20,7 +21,8 @@ async function renderSampleQuote() {
     const quoteData = await response.json();
 
     if (quoteData.year === null) quoteData.year = '';
-    sampleQuote.innerText = `"${quoteData.quote}"\n\n- Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`;
+    sampleQuote.innerText = `"${quoteData.quote}"`;
+    sampleQuoteDate.innerText = `- Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`
 }
 
 async function renderQuoteIndexRange() {
@@ -34,10 +36,10 @@ async function renderQuoteIndexRange() {
 // production template contains 79 non-quote characters
 function tweetQuote() {
     const encodedQuote = encodeURIComponent(sampleQuote.innerText);
+    const encodedQuoteDate = encodeURIComponent(sampleQuoteDate.innerText);
     const siteLink = `https://${window.location.host}`;
-    const hashtags = `Bwoah,KimiRaikkonen,F1`;
 
-    window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A%0A${siteLink}%0A&hashtags=${hashtags}`);
+    window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A${encodedQuoteDate}%0A%0A&url=${siteLink}`);
 }
 
 // analytics

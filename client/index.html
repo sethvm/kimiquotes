@@ -20,15 +20,6 @@
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen">
         <link href="stylesheet/styles.css" rel="stylesheet" type="text/css">
-        <!-- Global site tag -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152533938-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-152533938-3');
-        </script>
     </head>
 
     <body>
@@ -43,12 +34,14 @@
                     <span id='sampleQuote'>
                         Fetching quote...
                     </span>
+                    <br />
+                    <br />
+                    <span id='sampleQuoteDate'></span>
                 </p>
                 <div class='btnContainer'>
                     <button
                     id='quoteResetBtn'
-                    aria-label='new quote'
-                    onclick='handleInteraction("https://kimiquotes.herokuapp.com/quote")'>
+                    aria-label='new quote'>
                         <img
                         src='icons/chat.svg'
                         class='btn-icon'></img>
@@ -56,8 +49,7 @@
                     </button>
                     <button
                     id='tweetBtn'
-                    aria-label='tweet'
-                    onclick='handleInteraction("https://twitter.com")'>
+                    aria-label='tweet'>
                         <img
                         src='icons/twitter.svg'
                         class='btn-icon'></img>
@@ -94,8 +86,7 @@
                 <a
                 href="https://github.com/sethvm/kimi.quotes"
                 target="_blank"
-                rel="noopener noreferrer"
-                onclick='handleInteraction("https://github.com/sethvm/kimi.quotes")'>
+                rel="noopener noreferrer">
                     project source code
                 </a>
             </p>
@@ -104,8 +95,7 @@
                 <a
                 href="https://sethvm.com"
                 target="_blank"
-                rel="noopener noreferrer"
-                onclick='handleInteraction("https://github.com/sethvm/kimi.quotes")'>
+                rel="noopener noreferrer">
                     Seth Morenos
                 </a>
             </p>
