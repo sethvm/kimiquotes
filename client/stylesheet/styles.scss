@@ -9,7 +9,7 @@ $btn-hover-color: #F4E5B5;
 // fonts
 $body-font: 'Inter', sans-serif;
 $quote-font: 'Sanchez', sans-serif;
-$code-font: 'Courier', sans-serif;
+$code-font: monospace;
 
 @font-face {
     font-family: 'Inter';
@@ -46,8 +46,8 @@ $code-font: 'Courier', sans-serif;
 
 //font weight
 @mixin font-weight-bold {
-    font-weight: 650;
-    font-variation-settings: 'wght' 650;
+    font-weight: 700;
+    font-variation-settings: 'wght' 700;
 }
 
 @mixin font-weight-semibold {
