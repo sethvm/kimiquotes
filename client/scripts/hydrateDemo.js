@@ -28,7 +28,7 @@ async function renderSampleQuote() {
 function tweetQuote() {
     const encodedQuote = encodeURIComponent(sampleQuote.innerText);
     const encodedQuoteDate = encodeURIComponent(sampleQuoteDate.innerText);
-    const siteLink = `https://${window.location.host}`;
+    const siteLink = `${window.location.host}`;
 
     window.open(`https://twitter.com/intent/tweet?text=${encodedQuote}%0A${encodedQuoteDate}%0A%0A&url=${siteLink}`);
 }

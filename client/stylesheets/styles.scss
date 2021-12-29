@@ -118,13 +118,13 @@ a:visited {
     }
 }
 
-#title {
+.title {
     margin-bottom: 0;
     @include font-size-xl;
     @include font-weight-bold;
 }
 
-#blurb {
+.blurb {
     margin-top: 8px;
     color: $subheading-font-color;
     @include font-size-small;
@@ -154,7 +154,7 @@ a:visited {
 #sampleQuote {
     @media (min-width: 768px) {
         @include font-size-xl;
-        line-height: 1.25em;
+        line-height: 1.5em;
     }
 }
 
@@ -204,6 +204,10 @@ a:visited {
     @media (min-width: 375px) {
         @include font-size-small;
     }
+}
+
+.docSection {
+    margin: 72px auto;
 }
 
 .btn-icon {

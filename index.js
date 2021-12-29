@@ -40,6 +40,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './client/index.html'));
 })
 
+app.get('/apidoc', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/apidoc.html'));
+})
+
 app.get('/quote', (req, res) => {
     const result = lib.getAnyQuote(quotes);
     res.status(200).send(result);

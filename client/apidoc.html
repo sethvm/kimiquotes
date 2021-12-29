@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>kimi.rest API</title>
+        <meta name="description" content="Open source REST API that provides memorable team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen.">
+        <meta name="author" content="Seth Morenos">
+        <meta name="theme-color" content="#17181A">
+        <link rel="icon" href="favicon.png">
+        <link rel="canonical" href="https://kimiquotes.herokuapp.com/doc">
+        <!-- opengraph -->
+        <meta name="title" property="og:title" content="kimi.rest API">
+        <meta property="og:url" content="https://kimiquotes.herokuapp.com/doc">
+        <meta property="og:image" content="preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:length" content="630">
+        <meta property="og:description" content="Open source REST API that provides memorable team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen.">
+        <!-- twitter -->
+        <meta name ="twitter:title" content="kimi.rest API">
+        <meta name="twitter:image" content="preview.png">
+        <meta name="twitter:description" content="Open source REST API that provides memorable team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen.">
+        <!-- stylesheets -->
+        <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
+        <!-- Global site tag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152533938-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-152533938-3');
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class='title'>kimi.rest <abbr>API</abbr></h1>
+            <h2 class='blurb'>Team radio and interview quotes by Finnish F1 legend Kimi Räikkönen</h2>
+        </header>
+        <main>
+            <div class='docSection'>
+                <h3 class='subHeading'>Endpoints</h3>
+                <div class='codeSnippet'>
+                    <p>Return a random quote</p>
+                    <code>GET /quote</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return quote at a specified index<span id='indexRange'></span></p>
+                    <code>GET /quote/:index</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes</p>
+                    <code>GET /quotes</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes from a specified year</p>
+                    <code>GET /quotes/:year</code>
+                </div>
+            </div>
+            <div class='docSection'>
+                <h3 class='subHeading'>Usage</h3>
+                <div class='codeSnippet'>
+                    <p>EXAMPLE_DESCRIPTION</p>
+                    <code>SAMPLE_CODE</code>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Check out the
+                <a href="/">
+                    Kimi Quote Generator
+                </a>
+            </p>
+            <p>
+                Browse the
+                <a
+                href="https://github.com/sethvm/kimi.quotes"
+                target="_blank"
+                rel="noopener noreferrer">
+                    project source code
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>
