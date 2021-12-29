@@ -11,7 +11,7 @@ function getAnyQuote(arr) {
 }
 
 function getQuoteByIndex(arr, index) {
-    if (!arr[index]) return `No quote found at index ${index} :(`;
+    if (!arr[index]) return 404;
     const quote = arr[index];
     return quote;
 }
@@ -22,6 +22,6 @@ function getAllQuotes(arr) {
 
 function getQuotesByYear(arr, year) {
     const filteredQuotes = arr.filter(quote => quote.year === parseInt(year));
-    if (filteredQuotes.length === 0) return `No quotes found from the year ${year} :(`;
+    if (filteredQuotes.length === 0) return 404;
     return filteredQuotes;
 }
