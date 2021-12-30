@@ -31,11 +31,7 @@ GET all quotes from a specified year
 ```
 /quotes/:year
 ```
-<<<<<<< HEAD
 GET a quote using its ID
-=======
-Return a quote with a specified ID
->>>>>>> 3bb4f9c7c373129cd9e17b7c0d1a4972447ad045
 ```
 /quote/:id
 ```
