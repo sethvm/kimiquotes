@@ -1,16 +1,14 @@
 // selectors
+const sampleQuoteId = document.getElementById('sampleQuoteId');
 const sampleQuote = document.getElementById('sampleQuote');
 const sampleQuoteDate = document.getElementById('sampleQuoteDate');
 const quoteResetBtn = document.getElementById('quoteResetBtn');
 const tweetBtn = document.getElementById('tweetBtn');
-const indexRange = document.getElementById('indexRange');
-
 
 // listeners
 window.onload = renderSampleQuote();
 quoteResetBtn.addEventListener('click', renderSampleQuote);
 tweetBtn.addEventListener('click', tweetQuote);
-
 
 // fetch functions
 async function renderSampleQuote() {
@@ -18,6 +16,7 @@ async function renderSampleQuote() {
     const quoteData = await response.json();
 
     if (quoteData.year === null) quoteData.year = '';
+    sampleQuoteId.innerText = `#${quoteData.id}:`;
     sampleQuote.innerText = `"${quoteData.quote}"`;
     sampleQuoteDate.innerText = `- Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`
 }

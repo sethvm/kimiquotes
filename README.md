@@ -31,9 +31,9 @@ Return all quotes from a specified year
 ```
 GET /quotes/:year
 ```
-Return quote at a specified index
+Return the quote with a specified ID
 ```
-GET /quote/:index
+GET /quote/:id
 ```
 Return a random quote
 ```

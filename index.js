@@ -65,12 +65,12 @@ app.get('/quote', (req, res) => {
     res.status(200).send(result);
 })
 
-app.get('/quote/:index', (req, res) => {
-    const { index } = req.params;
-    const result = lib.getQuoteByIndex(quotes, index);
+app.get('/quote/:id', (req, res) => {
+    const { id } = req.params;
+    const result = lib.getQuoteByIndex(quotes, id);
 
     if (result === 404) {
-        res.status(result).send({ error: `no quote found at index ${index}`});
+        res.status(result).send({ error: `no quote found with ID #${id}`});
     } else {
         res.status(200).send(result);
     }
