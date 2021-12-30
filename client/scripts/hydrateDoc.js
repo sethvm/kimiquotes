@@ -1,7 +1,7 @@
-// document selectors
+// selectors
 const siteOrigin = document.getElementById('siteOrigin');
 
-// interface update listeners
+// listeners
 window.onload = () => {
     siteOrigin.innerText = `${window.location.origin}[endpoint]`;
 }

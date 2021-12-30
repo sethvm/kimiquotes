@@ -44,8 +44,7 @@
                 <h3 class='subHeading'>Usage</h3>
                 <div class='codeSnippet'>
                     <p>
-                        Construct a <abbr>URI</abbr> by appending an endpoint to the end of the
-                        website root domain
+                        Construct a <abbr>URI</abbr> by appending an endpoint to the <abbr>API</abbr> origin
                     </p>
                     <code id='siteOrigin'>https://domain.com[endpoint]</code>
                     <p>
@@ -56,20 +55,20 @@
             <div class='docSection'>
                 <h3 class='subHeading'>Endpoints</h3>
                 <div class='codeSnippet'>
-                    <p>GET a random quote</p>
-                    <code>/quote</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>GET quote at a specified index<span id='indexRange'></span></p>
-                    <code>/quote/:index</code>
-                </div>
-                <div class='codeSnippet'>
                     <p>GET all quotes</p>
                     <code>/quotes</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET all quotes from a specified year</p>
                     <code>/quotes/:year</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>GET quote at a specified index<span id='indexRange'></span></p>
+                    <code>/quote/:index</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>GET a random quote</p>
+                    <code>/quote</code>
                 </div>
             </div>
         </main>

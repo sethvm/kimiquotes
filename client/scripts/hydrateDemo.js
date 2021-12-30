@@ -1,4 +1,4 @@
-// document selectors
+// selectors
 const sampleQuote = document.getElementById('sampleQuote');
 const sampleQuoteDate = document.getElementById('sampleQuoteDate');
 const quoteResetBtn = document.getElementById('quoteResetBtn');
@@ -6,7 +6,7 @@ const tweetBtn = document.getElementById('tweetBtn');
 const indexRange = document.getElementById('indexRange');
 
 
-// interface update listeners
+// listeners
 window.onload = renderSampleQuote();
 quoteResetBtn.addEventListener('click', renderSampleQuote);
 tweetBtn.addEventListener('click', tweetQuote);

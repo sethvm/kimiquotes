@@ -14,15 +14,15 @@
 </p>
 <br />
 
+## :computer: Usage
+Construct a URI by appending an endpoint to the API origin
+```
+https://kimiquotes.herokuapp.com[endpoint]
+```
+<p><em>See below for a list of available endpoints</em></p>
+<br />
+
 ## :zap: Endpoints
-Return a random quote
-```
-GET /quote
-```
-Return quote at a specified index
-```
-GET /quote/:index
-```
 Return all quotes
 ```
 GET /quotes
@@ -31,16 +31,13 @@ Return all quotes from a specified year
 ```
 GET /quotes/:year
 ```
-<br />
-
-## :computer: Usage Example(s)
-Send `GET /quote/any` request using async/await and output JSON response
-``` javascript
-async function getQuote() {
-	const response = await fetch('https://kimiquotes.herokuapp.com/quote');
-	const quote = await response.json();
-	console.log(quote);
-}
+Return quote at a specified index
+```
+GET /quote/:index
+```
+Return a random quote
+```
+GET /quote
 ```
 <br />
 
