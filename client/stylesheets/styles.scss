@@ -96,6 +96,7 @@ code {
     border-radius: 4px;
     background-color: $code-background-color;
     font-family: $code-font;
+    word-break: break-all;
 }
 
 footer {
