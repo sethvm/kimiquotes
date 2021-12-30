@@ -1,0 +1,106 @@
+@use 'styles';
+
+@mixin quote-font-style {
+    font-family: styles.$quote-font;
+    color: styles.$highlight-font-color;
+    line-height: 1.35em;
+}
+
+@mixin btn-styling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 12px 20px;
+    border-radius: 200px;
+    border-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    font-family: styles.$body-font;
+}
+
+#quoteSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 100px auto;
+    @include styles.indent-padding;
+}
+
+#sampleQuote,
+#sampleQuoteDate {
+    @include quote-font-style;
+    @include styles.font-size-large;
+}
+
+#sampleQuote {
+    @media (min-width: 768px) {
+        @include styles.font-size-xl;
+        line-height: 1.5em;
+    }
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+
+    @media (min-width: 768px) {
+        margin-top: 72px;
+    }
+}
+
+#quoteResetBtn {
+    @include btn-styling;
+    @include styles.font-size-xs;
+    @include styles.font-weight-semibold;
+    margin-right: 18px;
+    background-color: styles.$highlight-font-color;
+    color: styles.$background-color;
+
+    &:hover {
+        background-color: styles.$btn-hover-color;
+    }
+
+    @media (min-width: 375px) {
+        @include styles.font-size-small;
+    }
+}
+
+#tweetBtn {
+    @include btn-styling;
+    @include styles.font-size-xs;
+    @include styles.font-weight-semibold;
+    background-color: styles.$tweet-btn-color;
+    color: styles.$heading-font-color;
+
+    &:hover {
+        background-color: styles.$tweet-btn-hover-color;
+    }
+
+    @media (min-width: 375px) {
+        @include styles.font-size-small;
+    }
+}
+
+.btn-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+
+    @media (min-width: 375px) {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.twitter-share-button {
+    color: inherit !important;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

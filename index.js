@@ -54,7 +54,7 @@ app.get('/quote/:index', (req, res) => {
     const result = lib.getQuoteByIndex(quotes, index);
 
     if (result === 404) {
-        res.status(404).send({ error: `no quote found at index ${index}`});
+        res.status(result).send({ error: `no quote found at index ${index}`});
     } else {
         res.status(200).send(result);
     }
@@ -70,7 +70,7 @@ app.get('/quotes/:year', (req, res) => {
     const result = lib.getQuotesByYear(quotes, year);
 
     if (result === 404) {
-        res.status(404).send({ error: `no quotes found from the year ${year}`});
+        res.status(result).send({ error: `no quotes found from the year ${year}`});
     } else {
         res.status(200).send(result);
     }
