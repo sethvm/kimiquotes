@@ -1,5 +1,6 @@
 const express = require('express')
 const compression = require('compression')
+const cors = require('cors')
 const helmet = require('helmet')
 const path = require('path')
 const app = express()
@@ -7,6 +8,11 @@ const PORT = process.env.PORT || 8000
 
 const lib = require('./src/lib.js')
 const quotes = require('./src/quotes.js')
+
+// CORS CONFIG
+const corsOptions = {
+    origin: 'https://kimiquotes.herokuapp.com'
+}
 
 // MIDDLEWARE
 app.use(helmet())
@@ -44,12 +50,12 @@ app.get('/doc', (req, res) => {
     res.sendFile(path.join(__dirname, './client/apidoc.html'));
 })
 
-app.get('/quotes', (req, res) => {
+app.get('/quotes', cors(corsOptions), (req, res) => {
     const result = lib.getAllQuotes(quotes);
     res.status(200).send(result);
 })
 
-app.get('/quotes/:year', (req, res) => {
+app.get('/quotes/:year', cors(corsOptions), (req, res) => {
     const { year } = req.params;
     const result = lib.getQuotesByYear(quotes, year);
 
@@ -60,12 +66,12 @@ app.get('/quotes/:year', (req, res) => {
     }
 })
 
-app.get('/quote', (req, res) => {
+app.get('/quote', cors(corsOptions), (req, res) => {
     const result = lib.getAnyQuote(quotes);
     res.status(200).send(result);
 })
 
-app.get('/quote/:id', (req, res) => {
+app.get('/quote/:id', cors(corsOptions), (req, res) => {
     const { id } = req.params;
     const result = lib.getQuoteByIndex(quotes, id);
 
