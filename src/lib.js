@@ -10,9 +10,9 @@ function getAnyQuote(arr) {
     return quote;
 }
 
-function getQuoteByIndex(arr, index) {
-    if (!arr[index]) return 404;
-    const quote = arr[index];
+function getQuoteByIndex(arr, id) {
+    if (!arr[id - 1]) return 404;
+    const quote = arr[id - 1];
     return quote;
 }
 
