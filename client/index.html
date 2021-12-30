@@ -20,7 +20,9 @@
         <meta name ="twitter:title" content="Kimi Quote Generator">
         <meta name="twitter:image" content="preview.png">
         <meta name="twitter:description" content="Team radio and interview quotes by Finnish Formula 1 legend Kimi Räikkönen. Created in honour of The Iceman's illustrious career.">
-        <link href="stylesheet/styles.css" rel="stylesheet" type="text/css">
+        <!-- stylesheets -->
+        <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/index.css" rel="stylesheet" type="text/css">
         <!-- Global site tag -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152533938-3"></script>
         <script>
@@ -34,10 +36,9 @@
 
     <body>
         <header>
-            <h1 id='title'>Kimi Quote Generator</h1>
-            <h2 id='blurb'>A kimi.quotes <abbr>API</abbr> demo</h2>
+            <h1 class='title'>Kimi Quote Generator</h1>
+            <h2 class='blurb'>A kimi.quotes <abbr>API</abbr> demo</h2>
         </header>
-
         <main id="quoteSection">
             <p>
                 <span id='sampleQuote'>
@@ -66,28 +67,23 @@
                 </button>
             </div>
         </main>
-
         <footer>
+            <p>
+                Read through the
+                <a href="/doc">
+                    <abbr>API</abbr> documentation
+                </a>
+            </p>
             <p>
                 Browse the
                 <a
-                href="https://github.com/sethvm/kimi.quotes#readme"
+                href="https://github.com/sethvm/kimi.quotes"
                 target="_blank"
                 rel="noopener noreferrer">
-                    <abbr>API</abbr> doc and source
-                </a>
-            </p>
-            <p>
-                Designed and built by
-                <a
-                href="https://github.com/sethvm"
-                target="_blank"
-                rel="noopener noreferrer">
-                    @sethvm
+                    project source code
                 </a>
             </p>
         </footer>
-
-        <script src="hydratePage.js"></script>
+        <script src="scripts/hydrateDemo.js"></script>
     </body>
 </html>

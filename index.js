@@ -40,20 +40,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './client/index.html'));
 })
 
-app.get('/quote', (req, res) => {
-    const result = lib.getAnyQuote(quotes);
-    res.status(200).send(result);
-})
-
-app.get('/quote/:index', (req, res) => {
-    const { index } = req.params;
-    const result = lib.getQuoteByIndex(quotes, index);
-
-    if (result === 404) {
-        res.status(404).send({ error: `no quote found at index ${index}`});
-    } else {
-        res.status(200).send(result);
-    }
+app.get('/doc', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/apidoc.html'));
 })
 
 app.get('/quotes', (req, res) => {
@@ -66,7 +54,23 @@ app.get('/quotes/:year', (req, res) => {
     const result = lib.getQuotesByYear(quotes, year);
 
     if (result === 404) {
-        res.status(404).send({ error: `no quotes found from the year ${year}`});
+        res.status(result).send({ error: `no quotes found from the year ${year}`});
+    } else {
+        res.status(200).send(result);
+    }
+})
+
+app.get('/quote', (req, res) => {
+    const result = lib.getAnyQuote(quotes);
+    res.status(200).send(result);
+})
+
+app.get('/quote/:index', (req, res) => {
+    const { index } = req.params;
+    const result = lib.getQuoteByIndex(quotes, index);
+
+    if (result === 404) {
+        res.status(result).send({ error: `no quote found at index ${index}`});
     } else {
         res.status(200).send(result);
     }
