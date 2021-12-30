@@ -1,10 +1,10 @@
-// quotes can have a maximum of 220 characters (excluding quotation marks)
+// to accomodate twitter share functionality, quotes can have a maximum of 220 characters (excluding quotation marks)
 'use strict';
 
 module.exports = [
     {
         "id": 1,
-        "quote": "Yeah, I was having a shit.",
+        "quote": "I was having a shit.",
         "year": 2006
     },
     {
@@ -79,7 +79,7 @@ module.exports = [
     },
     {
         "id": 16,
-        "quote": "Don't shout there, for fuck's sake! I will move when I have a chance.",
+        "quote": "Don't shout there, fuck's sake! I will move when I have a chance but not in the fast corners.",
         "year": 2013
     },
     {
@@ -109,7 +109,7 @@ module.exports = [
     },
     {
         "id": 22,
-        "quote": "That idiot will crash into me.",
+        "quote": "That idiot will crash into me if I wouldn't have gone straight.",
         "year": 2013
     },
     {
@@ -386,5 +386,45 @@ module.exports = [
         "id": 77,
         "quote": "You don't drive races on paper.",
         "year": null
+    },
+    {
+        "id": 78,
+        "quote": "Boring race.",
+        "year": 2007
+    },
+    {
+        "id": 79,
+        "quote": "There's always a lot of talk about motivation to race, but nobody really knows what I do or what I think apart from myself, so I don't really care what people think.",
+        "year": null
+    },
+    {
+        "id": 80,
+        "quote": "I'm happy, but there's nothing to jump around about.",
+        "year": null
+    },
+    {
+        "id": 81,
+        "quote": "In F1 too many things overshadow the racing. There is too much politics.",
+        "year": null
+    },
+    {
+        "id": 82,
+        "quote": "Come on, get that McLaren out of the way!",
+        "year": 2015
+    },
+    {
+        "id": 83,
+        "quote": "This guy's a fucking joke.",
+        "year": 2015
+    },
+    {
+        "id": 84,
+        "quote": "That guy keeps pushing me off the circuit every time, when I'm next to him. So if that's legal, then I will do the same next time.",
+        "year": 2015
+    },
+    {
+        "id": 85,
+        "quote": "What the fuck is this Marussia doing? He has been three corners now in the middle of the road.",
+        "year": 2015
     }
 ]
