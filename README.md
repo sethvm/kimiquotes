@@ -15,7 +15,7 @@
 <br />
 
 ## :computer: Usage
-Construct a URI by appending an endpoint to the API origin
+Make queries to the API using a URI with the following format:
 ```
 https://kimiquotes.herokuapp.com[endpoint]
 ```
@@ -23,21 +23,21 @@ https://kimiquotes.herokuapp.com[endpoint]
 <br />
 
 ## :zap: Endpoints
-Return all quotes
+GET all quotes
 ```
-GET /quotes
+/quotes
 ```
-Return all quotes from a specified year
+GET all quotes from a specified year
 ```
-GET /quotes/:year
+/quotes/:year
 ```
-Return the quote with a specified ID
+GET a quote using its ID
 ```
-GET /quote/:id
+/quote/:id
 ```
-Return a random quote
+GET a random quote
 ```
-GET /quote
+/quote
 ```
 <br />
 
