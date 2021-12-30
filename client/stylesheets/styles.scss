@@ -74,6 +74,10 @@ $code-font: monospace;
     padding: 0 4px;
 }
 
+@mixin line-height {
+    line-height: 1.5em;
+}
+
 // page styling
 body {
     max-width: 720px;
@@ -106,6 +110,7 @@ footer {
 
 p {
     @include font-weight-light;
+    @include line-height;
 }
 
 a,
@@ -129,6 +134,7 @@ a:visited {
     color: $subheading-font-color;
     @include font-size-small;
     @include font-weight-normal;
+    @include line-height;
 }
 
 #quoteSection {
@@ -249,7 +255,7 @@ a:visited {
 }
 
 .subHeading {
-    color: $subheading-font-color;
+    color: $highlight-font-color;
     @include font-size-large;
     @include font-weight-semibold;
 }

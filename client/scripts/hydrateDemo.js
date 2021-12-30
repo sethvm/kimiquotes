@@ -7,7 +7,7 @@ const indexRange = document.getElementById('indexRange');
 
 
 // interface update listeners
-window.onload = () => renderSampleQuote();
+window.onload = renderSampleQuote();
 quoteResetBtn.addEventListener('click', renderSampleQuote);
 tweetBtn.addEventListener('click', tweetQuote);
 

@@ -40,29 +40,35 @@
         </header>
         <main>
             <div class='docSection'>
-                <h3 class='subHeading'>Endpoints</h3>
+                <h3 class='subHeading'>Usage</h3>
                 <div class='codeSnippet'>
-                    <p>Return a random quote</p>
-                    <code>GET /quote</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return quote at a specified index<span id='indexRange'></span></p>
-                    <code>GET /quote/:index</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return all quotes</p>
-                    <code>GET /quotes</code>
-                </div>
-                <div class='codeSnippet'>
-                    <p>Return all quotes from a specified year</p>
-                    <code>GET /quotes/:year</code>
+                    <p>
+                        Construct a <abbr>URI</abbr> by appending an endpoint to the end of this
+                        website's root domain
+                    </p>
+                    <code><span class='siteOrigin'>https://domain.com</span>[endpoint]</code>
+                    <p>
+                        See below for a list of available endpoints
+                    </p>
                 </div>
             </div>
             <div class='docSection'>
-                <h3 class='subHeading'>Usage</h3>
+                <h3 class='subHeading'>Endpoints</h3>
                 <div class='codeSnippet'>
-                    <p>EXAMPLE_DESCRIPTION</p>
-                    <code>SAMPLE_CODE</code>
+                    <p>Return a random quote</p>
+                    <code>GET&nbsp;<span class='siteOrigin'></span>/quote</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return quote at a specified index<span id='indexRange'></span></p>
+                    <code>GET&nbsp;<span class='siteOrigin'></span>/quote/:index</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes</p>
+                    <code>GET&nbsp;<span class='siteOrigin'></span>/quotes</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Return all quotes from a specified year</p>
+                    <code>GET&nbsp;<span class='siteOrigin'></span>/quotes/:year</code>
                 </div>
             </div>
         </main>
@@ -83,5 +89,6 @@
                 </a>
             </p>
         </footer>
+        <script src="scripts/hydrateDoc.js"></script>
     </body>
 </html>
