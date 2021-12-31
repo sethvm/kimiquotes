@@ -29,11 +29,11 @@ GET all quotes
 ```
 GET all quotes from a specified year
 ```
-/quotes/:year
+/quotes/[year]
 ```
 GET a quote using its ID
 ```
-/quote/:id
+/quote/[id]
 ```
 GET a random quote
 ```
