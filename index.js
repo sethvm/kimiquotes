@@ -11,7 +11,7 @@ const quotes = require('./src/quotes.js')
 
 // CORS CONFIG
 const corsOptions = {
-    origin: 'https://kimiquotes.herokuapp.com'
+    origin: '*'
 }
 
 // MIDDLEWARE
