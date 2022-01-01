@@ -55,6 +55,16 @@ app.get('/quotes', cors(corsOptions), (req, res) => {
     res.status(200).send(result);
 })
 
+app.get('/quotes/unstamped', cors(corsOptions), (req, res) => {
+    const result = lib.getUnstampedQuotes(quotes);
+
+    if (result === 404) {
+        res.status(result).send({ error: `no unstamped quotes found` });
+    } else {
+        res.status(200).send(result);
+    }
+})
+
 app.get('/quotes/:year', cors(corsOptions), (req, res) => {
     const { year } = req.params;
     const result = lib.getQuotesByYear(quotes, year);

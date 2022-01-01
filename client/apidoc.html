@@ -63,12 +63,38 @@
                     <code>/quotes/[year]</code>
                 </div>
                 <div class='codeSnippet'>
+                    <p>GET all quotes that don't come with year timestamps</p>
+                    <code>/quotes/unstamped</code>
+                </div>
+                <div class='codeSnippet'>
                     <p>GET a quote using its <abbr>ID</abbr> number</p>
                     <code>/quote/[id]</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET a random quote</p>
                     <code>/quote</code>
+                </div>
+            </div>
+            <div class='docSection'>
+                <h3 class='subHeading'>Run Locally</h3>
+                <div class='codeSnippet'>
+                    <p>Clone the project repo</p>
+                    <code>$ git clone https://github.com/sethvm/kimiquotes.git</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Open a terminal in the project's root folder and install dependencies</p>
+                    <code>
+                        $ cd kimiquotes
+                        <br />$ npm install
+                    </code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Start development server with hot-reload enabled at localhost:8000</p>
+                    <code>$ npm run dev</code>
+                </div>
+                <div class='codeSnippet'>
+                    <p>Alternatively, start the application</p>
+                    <code>$ npm start</code>
                 </div>
             </div>
         </main>

@@ -1,4 +1,4 @@
-# :checkered_flag: kimiquotes
+# :checkered_flag: kimiquotes API
 
 <br />
 <div align=center>
@@ -6,7 +6,7 @@
 </div>
 
 <h4 align=center>
-    REST API that provides team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
+    Team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
 </h4>
 
 <p align=center>
@@ -31,6 +31,10 @@ GET all quotes from a specified year
 ```
 /quotes/[year]
 ```
+GET all quotes that don't come with year timestamps
+```
+/quotes/unstamped
+```
 GET a quote using its ID
 ```
 /quote/[id]
@@ -41,6 +45,26 @@ GET a random quote
 ```
 <br />
 
+## :floppy_disk: Run Locally
+Clone the project repo
+```
+$ git clone https://github.com/sethvm/kimiquotes.git
+```
+Open a terminal in the project's root folder and install dependencies
+```
+$ cd kimiquotes
+$ npm install
+```
+Start development server with hot-reload enabled at `localhost:8000`
+```
+$ npm run dev
+```
+Alternatively, start the application
+```
+$ npm start
+```
+<br />
+
 ## :memo: To-Do
  - Nothing at the moment — quote contributions/updates are welcome!
 <br />
@@ -48,4 +72,3 @@ GET a random quote
 ## :star2: Potential Improvements
  - Implement `POST`, `PATCH`, and `DELETE` endpoints
  - Categorize quotes (e.g. emotion, team radio, interview, venue)
-<br />

@@ -1,13 +1,28 @@
 module.exports = {
-    getAnyQuote,
-    getQuoteByIndex,
     getAllQuotes,
-    getQuotesByYear
+    getQuotesByYear,
+    getUnstampedQuotes,
+    getQuoteByIndex,
+    getAnyQuote
 }
 
-function getAnyQuote(arr) {
-    const quote = arr[Math.floor(Math.random() * arr.length)];
-    return quote;
+function getAllQuotes(arr) {
+    return arr;
+}
+
+// conditional functions return their respective quote arrays if matches are found
+// will return the error code otherwise
+
+function getQuotesByYear(arr, year) {
+    const quotes = arr.filter(quote => quote.year === parseInt(year));
+    if (quotes.length === 0) return 404;
+    return quotes;
+}
+
+function getUnstampedQuotes(arr) {
+    const quotes = arr.filter(quote => quote.year === null);
+    if (quotes.length === 0) return 404;
+    return quotes;
 }
 
 function getQuoteByIndex(arr, id) {
@@ -16,12 +31,7 @@ function getQuoteByIndex(arr, id) {
     return quote;
 }
 
-function getAllQuotes(arr) {
-    return arr;
-}
-
-function getQuotesByYear(arr, year) {
-    const filteredQuotes = arr.filter(quote => quote.year === parseInt(year));
-    if (filteredQuotes.length === 0) return 404;
-    return filteredQuotes;
+function getAnyQuote(arr) {
+    const quote = arr[Math.floor(Math.random() * arr.length)];
+    return quote;
 }
