@@ -1,13 +1,17 @@
-const express = require('express')
-const compression = require('compression')
-const cors = require('cors')
-const helmet = require('helmet')
-const path = require('path')
-const app = express()
-const PORT = process.env.PORT || 8000
+const express = require('express');
+import {
+    Request,
+    Response
+} from 'express';
+const compression = require('compression');
+const cors = require('cors');
+const helmet = require('helmet');
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 8000;
 
-const lib = require('./src/lib.js')
-const quotes = require('./src/quotes.js')
+const handlers = require('./src/handlers.js');
+const quotes = require('./src/quotes.js');
 
 // CORS CONFIG
 const corsOptions = {
@@ -42,21 +46,21 @@ app.use(compression())
 app.use(express.static('client'))
 
 // ROUTES
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, './client/index.html'));
 })
 
-app.get('/doc', (req, res) => {
+app.get('/doc', (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, './client/apidoc.html'));
 })
 
-app.get('/quotes', cors(corsOptions), (req, res) => {
-    const result = lib.getAllQuotes(quotes);
+app.get('/quotes', cors(corsOptions), (req: Request, res: Response) => {
+    const result = handlers.getAllQuotes(quotes);
     res.status(200).send(result);
 })
 
-app.get('/quotes/unstamped', cors(corsOptions), (req, res) => {
-    const result = lib.getUnstampedQuotes(quotes);
+app.get('/quotes/unstamped', cors(corsOptions), (req: Request, res: Response) => {
+    const result = handlers.getUnstampedQuotes(quotes);
 
     if (result === 404) {
         res.status(result).send({ error: `no unstamped quotes found` });
@@ -65,9 +69,9 @@ app.get('/quotes/unstamped', cors(corsOptions), (req, res) => {
     }
 })
 
-app.get('/quotes/:year', cors(corsOptions), (req, res) => {
+app.get('/quotes/:year', cors(corsOptions), (req: Request, res: Response) => {
     const { year } = req.params;
-    const result = lib.getQuotesByYear(quotes, year);
+    const result = handlers.getQuotesByYear(quotes, year);
 
     if (result === 404) {
         res.status(result).send({ error: `no quotes found from the year ${year}`});
@@ -76,14 +80,14 @@ app.get('/quotes/:year', cors(corsOptions), (req, res) => {
     }
 })
 
-app.get('/quote', cors(corsOptions), (req, res) => {
-    const result = lib.getAnyQuote(quotes);
+app.get('/quote', cors(corsOptions), (req: Request, res: Response) => {
+    const result = handlers.getAnyQuote(quotes);
     res.status(200).send(result);
 })
 
-app.get('/quote/:id', cors(corsOptions), (req, res) => {
+app.get('/quote/:id', cors(corsOptions), (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = lib.getQuoteByIndex(quotes, id);
+    const result = handlers.getQuoteByIndex(quotes, id);
 
     if (result === 404) {
         res.status(result).send({ error: `no quote found with ID #${id}`});
@@ -96,4 +100,7 @@ app.get('/quote/:id', cors(corsOptions), (req, res) => {
 app.set('json spaces', 4)
 
 // PORT
-app.listen(PORT)
+app.listen(
+    PORT,
+    console.log(`Server running at port ${PORT}`)
+)

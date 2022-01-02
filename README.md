@@ -20,7 +20,6 @@ Make queries to the API using a URI with the following format:
 https://kimiquotes.herokuapp.com[endpoint]
 ```
 <p><em>See below for a list of available endpoints</em></p>
-<br />
 
 ## :zap: Endpoints
 GET all quotes
@@ -43,7 +42,6 @@ GET a random quote
 ```
 /quote
 ```
-<br />
 
 ## :floppy_disk: Run Locally
 Clone the project repo
@@ -55,19 +53,13 @@ Open a terminal in the project's root folder and install dependencies
 $ cd kimiquotes
 $ npm install
 ```
-Start development server with hot-reload enabled at `localhost:8000`
-```
-$ npm run dev
-```
-Alternatively, start the application
+Start the server with hot-reload enabled at `localhost:8000`
 ```
 $ npm start
 ```
-<br />
 
 ## :memo: To-Do
  - Nothing at the moment — quote contributions/updates are welcome!
-<br />
 
 ## :star2: Potential Improvements
  - Implement `POST`, `PATCH`, and `DELETE` endpoints

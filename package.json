@@ -1,15 +1,15 @@
 {
   "name": "kimiquotes",
   "version": "1.0.0",
-  "author": "Seth Morenos",
+  "author": "Seth Morenos <https://sethvm.com>",
   "email": "sethvm64@gmail.com",
   "description": "REST API that returns quotes by Finnish F1 legend Kimi Räikkönen",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.ts",
+    "build": "npx tsc",
     "sass": "sass --watch client:client --style compressed",
-    "dev": "npx nodemon",
-    "start": "node index.js",
     "test": "jest"
   },
   "repository": {
@@ -35,9 +35,16 @@
     "helmet": "^4.6.0"
   },
   "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.6",
+    "@types/nodemon": "^1.19.1",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15",
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   },
   "engines": {
     "node": "16.13.0"
