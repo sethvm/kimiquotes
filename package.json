@@ -5,13 +5,13 @@
   "email": "sethvm64@gmail.com",
   "description": "REST API that returns quotes by Finnish F1 legend Kimi Räikkönen",
   "license": "MIT",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon index.ts",
     "build": "npx tsc",
-    "start": "node ./build/index.js",
-    "sass": "sass --watch client:client --style compressed",
-    "test": "npx jest"
+    "start": "node index.js",
+    "test": "npx jest",
+    "sass": "sass --watch client:client --style compressed"
   },
   "repository": {
     "type": "git",
