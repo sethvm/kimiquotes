@@ -1,6 +1,6 @@
 # API production code:
-*.js
-!client/**.js
+index.js
+src/**.js
 
 # Logs
 logs
