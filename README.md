@@ -48,14 +48,14 @@ Clone the project repo
 ```
 $ git clone https://github.com/sethvm/kimiquotes.git
 ```
-Open a terminal in the project's root folder and install dependencies
+Navigate to the project's root folder and install the dependencies
 ```
 $ cd kimiquotes
 $ npm install
 ```
-Start the server with hot-reload enabled at `localhost:8000`
+Start the development server with hot-reload enabled at `localhost:8000`
 ```
-$ npm start
+$ npm run dev
 ```
 
 ## :memo: To-Do
