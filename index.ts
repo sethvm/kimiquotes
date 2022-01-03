@@ -10,8 +10,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-const handlers = require('./src/handlers.js');
-const quotes = require('./src/quotes.js');
+import {
+    getAllQuotes,
+    getQuotesByYear,
+    getQuoteByIndex,
+    getAnyQuote
+} from './src/handlers';
+import quotes from './src/quotes';
 
 // CORS CONFIG
 const corsOptions = {
@@ -55,23 +60,18 @@ app.get('/doc', (req: Request, res: Response) => {
 })
 
 app.get('/quotes', cors(corsOptions), (req: Request, res: Response) => {
-    const result = handlers.getAllQuotes(quotes);
+    const result = getAllQuotes(quotes);
     res.status(200).send(result);
-})
-
-app.get('/quotes/unstamped', cors(corsOptions), (req: Request, res: Response) => {
-    const result = handlers.getUnstampedQuotes(quotes);
-
-    if (result === 404) {
-        res.status(result).send({ error: `no unstamped quotes found` });
-    } else {
-        res.status(200).send(result);
-    }
 })
 
 app.get('/quotes/:year', cors(corsOptions), (req: Request, res: Response) => {
     const { year } = req.params;
-    const result = handlers.getQuotesByYear(quotes, year);
+    let result = undefined;
+    if (year === 'unstamped') {
+        result = getQuotesByYear(quotes);
+    } else {
+        result = getQuotesByYear(quotes, year);
+    }
 
     if (result === 404) {
         res.status(result).send({ error: `no quotes found from the year ${year}`});
@@ -81,13 +81,13 @@ app.get('/quotes/:year', cors(corsOptions), (req: Request, res: Response) => {
 })
 
 app.get('/quote', cors(corsOptions), (req: Request, res: Response) => {
-    const result = handlers.getAnyQuote(quotes);
+    const result = getAnyQuote(quotes);
     res.status(200).send(result);
 })
 
 app.get('/quote/:id', cors(corsOptions), (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = handlers.getQuoteByIndex(quotes, id);
+    const result = getQuoteByIndex(quotes, parseInt(id));
 
     if (result === 404) {
         res.status(result).send({ error: `no quote found with ID #${id}`});
