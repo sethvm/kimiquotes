@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "nodemon index.ts",
     "build": "npx tsc",
-    "start": "node index.js",
     "test": "npx jest",
     "sass": "sass --watch client:client --style compressed"
   },
