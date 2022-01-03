@@ -1,7 +1,13 @@
 // to accomodate twitter share functionality, quotes can have a maximum of 220 characters (excluding quotation marks)
 'use strict';
 
-module.exports = [
+interface QuoteObject {
+    id: number,
+    quote: string,
+    year?: number
+}
+
+const quotes: QuoteObject[] = [
     {
         "id": 1,
         "quote": "I was having a shit.",
@@ -319,93 +325,75 @@ module.exports = [
     },
     {
         "id": 64,
-        "quote": "Ah, go and interview Mikko Leppilampi. He likes to talk.",
-        "year": null
+        "quote": "Ah, go and interview Mikko Leppilampi. He likes to talk."
     },
     {
         "id": 65,
-        "quote": "Bwoah.",
-        "year": null
+        "quote": "Bwoah."
     },
     {
         "id": 66,
-        "quote": "Coulthard can say what he wants. I'm not interested in what he's saying.",
-        "year": null
+        "quote": "Coulthard can say what he wants. I'm not interested in what he's saying."
     },
     {
         "id": 67,
-        "quote": "Formula 1 would be a paradise without the media.",
-        "year": null
+        "quote": "Formula 1 would be a paradise without the media."
     },
     {
         "id": 68,
-        "quote": "I don't give a damn about what Trulli says.",
-        "year": null
+        "quote": "I don't give a damn about what Trulli says."
     },
     {
         "id": 69,
-        "quote": "I'm not interested in what Jackie says. He hasn't got anything to do with me.",
-        "year": null
+        "quote": "I'm not interested in what Jackie says. He hasn't got anything to do with me."
     },
     {
         "id": 70,
-        "quote": "I'm not interested in what people think about me. I'm not Michael Schumacher.",
-        "year": null
+        "quote": "I'm not interested in what people think about me. I'm not Michael Schumacher."
     },
     {
         "id": 71,
-        "quote": "I read somewhere that I drive with the luck of a drunk.",
-        "year": null
+        "quote": "I read somewhere that I drive with the luck of a drunk."
     },
     {
         "id": 72,
-        "quote": "It's all the same if it rains or not.",
-        "year": null
+        "quote": "It's all the same if it rains or not."
     },
     {
         "id": 73,
-        "quote": "Mwoah.",
-        "year": null
+        "quote": "Mwoah."
     },
     {
         "id": 74,
-        "quote": "Others can sit in the simulators if they want. I'm here to drive.",
-        "year": null
+        "quote": "Others can sit in the simulators if they want. I'm here to drive."
     },
     {
         "id": 75,
-        "quote": "The first sector is okay, the rest is a bit shit.",
-        "year": null
+        "quote": "The first sector is okay, the rest is a bit shit."
     },
     {
         "id": 76,
-        "quote": "What the papers write about me afterwards makes me laugh.",
-        "year": null
+        "quote": "What the papers write about me afterwards makes me laugh."
     },
     {
         "id": 77,
-        "quote": "You don't drive races on paper.",
-        "year": null
+        "quote": "You don't drive races on paper."
     },
     {
         "id": 78,
-        "quote": "Boring race.",
-        "year": 2007
+        "quote": "Boring race."
     },
     {
         "id": 79,
-        "quote": "There's always a lot of talk about motivation to race, but nobody really knows what I do or what I think apart from myself, so I don't really care what people think.",
-        "year": null
+        "quote": "There's always a lot of talk about motivation to race, but nobody really knows what I do or what I think apart from myself, so I don't really care what people think."
     },
     {
         "id": 80,
-        "quote": "I'm happy, but there's nothing to jump around about.",
-        "year": null
+        "quote": "I'm happy, but there's nothing to jump around about."
     },
     {
         "id": 81,
-        "quote": "In F1 too many things overshadow the racing. There is too much politics.",
-        "year": null
+        "quote": "In F1 too many things overshadow the racing. There is too much politics."
     },
     {
         "id": 82,
@@ -428,3 +416,5 @@ module.exports = [
         "year": 2015
     }
 ]
+
+export default quotes;

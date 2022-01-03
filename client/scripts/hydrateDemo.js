@@ -15,7 +15,7 @@ async function renderSampleQuote() {
     const response = await fetch(`${window.location.href}quote`);
     const quoteData = await response.json();
 
-    if (quoteData.year === null) quoteData.year = '';
+    if (!quoteData.year) quoteData.year = '';
     sampleQuoteId.innerText = `#${quoteData.id}:`;
     sampleQuote.innerText = `"${quoteData.quote}"`;
     sampleQuoteDate.innerText = `- Kimi Räikkönen${quoteData.year && `, ${quoteData.year}`}`

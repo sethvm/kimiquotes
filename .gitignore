@@ -1,3 +1,7 @@
+# API production code:
+index.js
+src/**.js
+
 # Logs
 logs
 *.log
