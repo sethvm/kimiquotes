@@ -1,5 +1,6 @@
-# production
-build
+# API production code:
+*.js
+!client/**.js
 
 # Logs
 logs
