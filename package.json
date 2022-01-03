@@ -7,8 +7,9 @@
   "license": "MIT",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon index.ts",
+    "dev": "nodemon index.ts",
     "build": "npx tsc",
+    "start": "node ./build/index.js",
     "sass": "sass --watch client:client --style compressed",
     "test": "npx jest"
   },
