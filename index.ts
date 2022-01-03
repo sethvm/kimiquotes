@@ -10,13 +10,14 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8000;
 
+// DATA & HANDLERS
+import quotes from './src/quotes';
 import {
     getAllQuotes,
     getQuotesByYear,
     getQuoteByIndex,
     getAnyQuote
 } from './src/handlers';
-import quotes from './src/quotes';
 
 // CORS CONFIG
 const corsOptions = {
