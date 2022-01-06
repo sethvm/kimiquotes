@@ -10,5 +10,5 @@
         "esModuleInterop": true,
     },
     "include": ["**/*.ts"],
-    "exclude": ["client", "tests", "node_modules"]
+    "exclude": ["public", "tests", "node_modules"]
 }

@@ -10,8 +10,8 @@
     "dev": "nodemon index.ts",
     "build": "npx tsc",
     "start": "node index.js",
-    "test": "npx jest",
-    "sass": "sass --watch client:client --style compressed"
+    "test": "npx jest ./tests --maxWorkers 2",
+    "sass": "sass --watch public:public --style compressed"
   },
   "repository": {
     "type": "git",
