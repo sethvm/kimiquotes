@@ -1,7 +1,7 @@
 // to accomodate twitter share functionality, quotes can have a maximum of 220 characters (excluding quotation marks)
 'use strict';
 
-interface QuoteObject {
+export interface QuoteObject {
     id: number,
     quote: string,
     year?: number
