@@ -3,7 +3,7 @@ const compression = require('compression');
 const helmet = require('helmet');
 const path = require('path');
 const app = express();
-const routes = require('./routes');
+const routes = require('./routes/routes');
 const PORT = process.env.PORT || 8000;
 
 // middleware

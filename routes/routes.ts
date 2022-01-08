@@ -13,21 +13,21 @@ const corsOptions = {
 }
 
 // data & handlers
-import quotes from './data/quotes';
+import quotes from '../data/quotes';
 import {
     getAllQuotes,
     getQuotesByYear,
     getQuoteByIndex,
     getAnyQuote
-} from './handlers';
+} from '../handlers/handlers';
 
 // routes
 router.get('/', (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 })
 
 router.get('/doc', (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, './public/apidoc.html'));
+    res.sendFile(path.join(__dirname, '../public/apidoc.html'));
 })
 
 router.get('/quotes', cors(corsOptions), (req: Request, res: Response) => {

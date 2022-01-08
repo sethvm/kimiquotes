@@ -1,5 +1,5 @@
 // quote data interface
-import { QuoteObject } from "./data/quotes";
+import { QuoteObject } from "../data/quotes";
 
 // GET handlers return filtered quote arrays if matches are found
 // will return the error code otherwise
