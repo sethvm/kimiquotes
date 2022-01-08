@@ -12,8 +12,8 @@ export function getAllQuotes(arr: QuoteObject[]) {
 /* /quotes/{ :year || unstamped } */
 export function getQuotesByYear(arr: QuoteObject[], year?: string) {
     let quotes = [];
-    if (!year) quotes = arr.filter((quote: any) => !quote.year);
-    else quotes = arr.filter((quote: any) => quote.year === parseInt(year));
+    if (!year) quotes = arr.filter((quote: QuoteObject) => !quote.year);
+    else quotes = arr.filter((quote: QuoteObject) => quote.year === parseInt(year));
     
     if (quotes.length === 0) return 404;
     return quotes;
