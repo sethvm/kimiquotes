@@ -28,7 +28,7 @@ GET all quotes
 ```
 GET all quotes from a specified year
 ```
-/quotes/[year]
+/quotes/:year
 ```
 GET all quotes that don't come with year timestamps
 ```
@@ -36,7 +36,7 @@ GET all quotes that don't come with year timestamps
 ```
 GET a quote using its ID
 ```
-/quote/[id]
+/quote/:id
 ```
 GET a random quote
 ```
@@ -48,7 +48,7 @@ Clone the project repo
 ```
 $ git clone https://github.com/sethvm/kimiquotes.git
 ```
-Navigate to the project's root folder and install the dependencies
+Install the dependencies
 ```
 $ cd kimiquotes
 $ npm install
