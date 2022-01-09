@@ -4,10 +4,12 @@
 <div align=center>
     <img src='kimi.gif' width=320 height=201 />
 </div>
+<br />
 
-<h4 align=center>
-    Team radio and interview quotes by Finnish F1 legend Kimi Räikkönen
-</h4>
+<div align=center>
+    <b>Team radio and interview quotes by Finnish F1 legend Kimi Räikkönen</b>
+</div>
+<br />
 
 <p align=center>
 	Inspired by <a href=https://github.com/ajzbc/kanye.rest>ajzbc's kanye.rest</a> and <a href=https://github.com/oanhgle/bangtan-api>oanhgle's bangtan-api</a>
