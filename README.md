@@ -1,4 +1,4 @@
-# :checkered_flag: kimiquotes API
+# :speech_balloon: kimiquotes API
 
 <br />
 <div align=center>
