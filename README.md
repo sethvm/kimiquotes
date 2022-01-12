@@ -1,4 +1,4 @@
-# :speech_balloon: kimiquotes API
+# :speech_balloon: KimiQuotes API
 
 <br />
 <div align=center>
@@ -48,16 +48,16 @@ GET a random quote
 ## :floppy_disk: Run Locally
 Clone the project repo
 ```
-$ git clone https://github.com/sethvm/kimiquotes.git
+git clone https://github.com/sethvm/kimiquotes.git
 ```
 Install the dependencies
 ```
-$ cd kimiquotes
-$ npm install
+cd kimiquotes
+npm install
 ```
 Start the development server with hot-reload enabled at `localhost:8000`
 ```
-$ npm run dev
+npm run dev
 ```
 
 ## :memo: To-Do

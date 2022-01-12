@@ -12,14 +12,14 @@ const corsOptions = {
     origin: '*'
 }
 
-// data & handlers
+// data & controllers
 import quotes from '../data/quotes';
 import {
     getAllQuotes,
     getQuotesByYear,
     getQuoteByIndex,
     getAnyQuote
-} from '../handlers/handlers';
+} from '../controllers/controllers';
 
 // routes
 router.get('/', (req: Request, res: Response) => {
