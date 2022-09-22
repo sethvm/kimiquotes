@@ -1,6 +1,9 @@
 # API production code:
 index.js
-src/**.js
+data/**.js
+controllers/**.js
+routes/**.js
+jest.config.js
 
 # Logs
 logs
