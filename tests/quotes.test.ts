@@ -1,5 +1,5 @@
 // quote database
-const quoteData = require('../src/quotes');
+const quoteData = require('../data/quotes');
 
 // test cases
 describe('All quote objects', () => {
